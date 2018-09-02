@@ -1,17 +1,36 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                                                              %
-%   File:     metholodgy.tex                                               %
-%   Document: XXX	                                                       %
-%   Author:   Freismuth David                                              %
-%	Date:	  22.JUN.2018                                                  %
-%   Content:  Contains the Metholodgy section of the Bachelor thesis.      %
+%   File:     metholodgy.tex                                                   %
+%   Document: XXX	                                                           %
+%   Author:   Freismuth David                                                  %
+%	Date:	  22.JUN.2018                                                      %
+%   Content:  Contains the Metholodgy section of the Bachelor thesis.          %
 %                                                                              %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Metholodgy}
 
-We use Scrapy, a Python web scraping library, to 
+To achieve our goal of the categorization of hardware designs trough a structural
+analysis of the corresponding HDL Design, we first propose a standardized 
+match vector, which is calculated from the Design's Two-to-One and One-to-One Gate
+Level Connections (see \label{logicGates} for referencce). The vector gets standardized,
+so small designs remain compareable to bigger ones. This vector shall then act as 
+categorization criteria, to sort the design into predefined design categories. 
+Those categories are clusters in the vector space the match vector is part of. 
+If the matchvector points into such a cluster, the design is identified with the
+corresponding category.
+This section elaborates on the details of finding a match vector of a design, and
+how the category clusters are defined. 
+
+\subsection{Cluster Identification}
+As Mentionend above, before any categorization can take place, the categories itself
+have to be defined. In our model, categories are clusters in a n-dimensional vector space. 
+Therefore, the task is to identify clusters in this vector space, and name them. 
+To do this, we determine the match vector of well known designs. Since
+the categorization of those designs is already available, the vectors that originate from designs with identical categorizations, can be grouped together to clusters. 
+
+Since it is expected, that the validity of such clusters increases with the number of analyzed designs, an automatic process has to be established, to enable the analysis of a great amount of designs. To achieve this, we use Scrapy, a Python web scraping tool, to 
 automatically obtain design files and corresponding meta-information for each 
 design that is published via \gls{oc}. We are interested in the following data:
 
@@ -28,8 +47,6 @@ design that is published via \gls{oc}. We are interested in the following data:
 	\item{The \gls{hdl} files of the design}
 	
 \end{enumerate}
-
-\subsection{Learn Process}
 
 \subsubsection{Scraping OpenCores project web sites} 
 The scraped data is temporarily stored into Python class objects. The information 
@@ -96,7 +113,11 @@ subsequent steps.
 \subsubsection{Matching designs against standard pattern vector}
 \subsubsection{Calculating clusters of design match vectors}
 
+\subsection{Design Identification}
+blabla
+
 \subsection{Verification}
+blabla
 
 
 

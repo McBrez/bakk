@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.23)  30 AUG 2018 21:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800) (preloaded format=pdflatex 2018.9.2)  2 SEP 2018 14:26
 entering extended mode
 **./test_main.tex
 (test_main.tex
@@ -424,7 +424,7 @@ Package pdftex.def Info: ../pictures/logicGates.png  used on input line 25.
 <../pictures/hw_trojan_nets.jpg, id=15, 624.83438pt x 264.99pt>
 File: ../pictures/hw_trojan_nets.jpg Graphic file (type jpg)
 <use ../pictures/hw_trojan_nets.jpg>
-Package pdftex.def Info: ../pictures/hw_trojan_nets.jpg  used on input line 31.
+Package pdftex.def Info: ../pictures/hw_trojan_nets.jpg  used on input line 32.
 
 (pdftex.def)             Requested size: 345.0pt x 146.31506pt.
 ) [4
@@ -438,12 +438,12 @@ Package pdftex.def Info: ../pictures/hw_trojan_nets.jpg  used on input line 31.
 File: ../pictures/jsonFileFormatDescription.JPG Graphic file (type jpg)
 <use ../pictures/jsonFileFormatDescription.JPG>
 Package pdftex.def Info: ../pictures/jsonFileFormatDescription.JPG  used on inp
-ut line 43.
+ut line 60.
 (pdftex.def)             Requested size: 345.0pt x 151.25612pt.
  [5
 
 
- <../pictures/jsonFileFormatDescription.JPG>]) [6] [7]
+] [6 <../pictures/jsonFileFormatDescription.JPG>]) [7]
 \openout2 = `discussion.aux'.
 
  (discussion.tex) [8
@@ -459,10 +459,10 @@ ut line 43.
 _art.aux) (metholodgy.aux)
 (discussion.aux) (conclusion.aux)) ) 
 Here is how much of TeX's memory you used:
- 9420 strings out of 492973
- 149474 string characters out of 3135932
- 265879 words of memory out of 3000000
- 13109 multiletter control sequences out of 15000+200000
+ 9422 strings out of 492973
+ 149503 string characters out of 3135933
+ 266917 words of memory out of 3000000
+ 13111 multiletter control sequences out of 15000+200000
  5158 words of font info for 19 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,5n,41p,1998b,1022s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -470,7 +470,7 @@ Here is how much of TeX's memory you used:
 blic/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmr10.pfb>
-Output written on test_main.pdf (9 pages, 343925 bytes).
+Output written on test_main.pdf (9 pages, 345153 bytes).
 PDF statistics:
  47 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
