@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.23)  23 AUG 2018 15:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.23)  30 AUG 2018 21:56
 entering extended mode
 **./test_main.tex
 (test_main.tex
@@ -44,36 +44,296 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(test_main.aux (abstract.aux) (introduction.aux) (state_of_the_art.aux)
+("C:\Program Files\MiKTeX 2.9\tex\latex\glossaries\base\glossaries.sty"
+Package: glossaries 2018/07/23 v4.41 (NLCT)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+\XKV@toks=\toks15
+\XKV@tempa@toks=\toks16
+)
+\XKV@depth=\count88
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\mfirstuc\mfirstuc.sty"
+Package: mfirstuc 2017/11/14 v2.06 (NLCT)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count89
+)
+\@glsmfirst=\toks17
+\@glsmrest=\toks18
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\textcase\textcase.sty"
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\xfor\xfor.sty"
+Package: xfor 2009/02/05 v1.05 (NLCT)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\datatool\datatool-base.sty"
+Package: datatool-base 2018/04/16 v2.30 (NLCT)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen105
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen106
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count90
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count91
+\leftroot@=\count92
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count93
+\DOTSCASE@=\count94
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen107
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count95
+\c@MaxMatrixCols=\count96
+\dotsspace@=\muskip10
+\c@parentequation=\count97
+\dspbrk@lvl=\count98
+\tag@help=\toks20
+\row@=\count99
+\column@=\count100
+\maxfields@=\count101
+\andhelp@=\toks21
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
+\@envbody=\toks22
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\substr\substr.sty"
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\datatool\datatool-fp.sty"
+Package: datatool-fp 2018/04/16 v2.30 (NLCT)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp.sty"
+Package: fp 1995/04/02
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+("C:\Program Files\MiKTeX 2.9\tex\latex\fp\defpattern.sty"
+Package: defpattern 1994/10/12
+\actioncount=\count103
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-basic.sty"
+Package: fp-basic 1996/05/13
+\FP@xs=\count104
+\FP@xia=\count105
+\FP@xib=\count106
+\FP@xfa=\count107
+\FP@xfb=\count108
+\FP@rega=\count109
+\FP@regb=\count110
+\FP@regs=\count111
+\FP@times=\count112
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-addons.sty"
+Package: fp-addons 1995/03/15
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-snap.sty"
+Package: fp-snap 1995/04/05
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-exp.sty"
+Package: fp-exp 1995/04/03
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-trigo.sty"
+Package: fp-trigo 1995/04/14
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-pas.sty"
+Package: fp-pas 1994/08/29
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-random.sty"
+Package: fp-random 1995/02/23
+\FPseed=\count113
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-eqn.sty"
+Package: fp-eqn 1995/04/03
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-upn.sty"
+Package: fp-upn 1996/10/21
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-eval.sty"
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks24
+\@dtl@tmpcount=\count114
+\dtl@tmplength=\skip46
+\dtl@sortresult=\count115
+\@dtl@numgrpsepcount=\count116
+\@dtl@datatype=\count117
+\dtl@codeA=\count118
+\dtl@codeB=\count119
+\@dtl@foreach@level=\count120
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\glossaries\base\glossaries-compatible-3
+07.sty"
+Package: glossaries-compatible-307 2018/07/23 v4.41 (NLCT)
+)
+\gls@level=\count121
+\@gls@tmpb=\toks25
+\gls@tmplen=\skip47
+\glskeylisttok=\toks26
+\glslabeltok=\toks27
+\glsshorttok=\toks28
+\glslongtok=\toks29
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-hypernav.sty
+"
+Package: glossary-hypernav 2018/07/23 v4.41 (NLCT)
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-list.sty"
+Package: glossary-list 2018/07/23 v4.41 (NLCT)
+\glslistdottedwidth=\skip48
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-long.sty"
+Package: glossary-long 2018/07/23 v4.41 (NLCT)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip49
+\LTright=\skip50
+\LTpre=\skip51
+\LTpost=\skip52
+\LTchunksize=\count122
+\LTcapwidth=\dimen114
+\LT@head=\box28
+\LT@firsthead=\box29
+\LT@foot=\box30
+\LT@lastfoot=\box31
+\LT@cols=\count123
+\LT@rows=\count124
+\c@LT@tables=\count125
+\c@LT@chunks=\count126
+\LT@p@ftn=\toks30
+)
+\glsdescwidth=\skip53
+\glspagelistwidth=\skip54
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-super.sty"
+Package: glossary-super 2018/07/23 v4.41 (NLCT)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\supertabular\supertabular.sty"
+Package: supertabular 2004/02/20 v4.1e the supertabular environment
+\c@tracingst=\count127
+\ST@wd=\dimen115
+\ST@rightskip=\skip55
+\ST@leftskip=\skip56
+\ST@parfillskip=\skip57
+\ST@pageleft=\dimen116
+\ST@headht=\dimen117
+\ST@tailht=\dimen118
+\ST@pagesofar=\dimen119
+\ST@pboxht=\dimen120
+\ST@lineht=\dimen121
+\ST@stretchht=\dimen122
+\ST@prevht=\dimen123
+\ST@toadd=\dimen124
+\ST@dimen=\dimen125
+\ST@pbox=\box32
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-tree.sty"
+Package: glossary-tree 2018/07/23 v4.41 (NLCT)
+\glstreeindent=\skip58
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\cleveref\cleveref.sty"
+Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count128
+\lst@gtempboxa=\box33
+\lst@token=\toks31
+\lst@length=\count129
+\lst@currlwidth=\dimen126
+\lst@column=\count130
+\lst@pos=\count131
+\lst@lostspace=\dimen127
+\lst@width=\dimen128
+\lst@newlines=\count132
+\lst@lineno=\count133
+\lst@maxwidth=\dimen129
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count134
+\lst@skipnumbers=\count135
+\lst@framebox=\box34
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+\glswrite=\write3
+\glo@main@file=\write4
+\openout4 = `test_main.glo'.
+
+Package glossaries Info: Writing glossary file test_main.glo on input line 9.
+ (test_main.aux (abstract.aux) (glossary.aux) (introduction.aux) (state_of_the_
+art.aux)
 (metholodgy.aux) (discussion.aux) (conclusion.aux))
 \openout1 = `test_main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count88
-\scratchdimen=\dimen105
-\scratchbox=\box26
-\nofMPsegments=\count89
-\nofMParguments=\count90
-\everyMPshowfont=\toks15
-\MPscratchCnt=\count91
-\MPscratchDim=\dimen106
-\MPnumerator=\count92
-\makeMPintoPDFobject=\count93
-\everyMPtoPDFconversion=\toks16
+\scratchcounter=\count136
+\scratchdimen=\dimen130
+\scratchbox=\box35
+\nofMPsegments=\count137
+\nofMParguments=\count138
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count139
+\MPscratchDim=\dimen131
+\MPnumerator=\count140
+\makeMPintoPDFobject=\count141
+\everyMPtoPDFconversion=\toks33
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -126,332 +386,93 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
+(test_main.glsdefs)
+\c@lstlisting=\count142
 \openout2 = `abstract.aux'.
 
  (abstract.tex) [1
 
+\openout3 = `test_main.ist'.
+
 
 {C:/Users/davfr/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-\openout2 = `introduction.aux'.
+\openout2 = `glossary.aux'.
 
+ (glossary.tex (test_main.gls
+\@gls@deffile=\write5
+\openout5 = `test_main.glsdefs'.
 
-(introduction.tex) [2
+)) [2
 
 
 ]
-\openout2 = `state_of_the_art.aux'.
+\openout2 = `introduction.aux'.
 
- (state_of_the_art.tex
-
-LaTeX Warning: File `../pictures/hw_trojans_nets.jpg' not found on input line 3
-1.
-
-
-! Package pdftex.def Error: File `../pictures/hw_trojans_nets.jpg' not found: u
-sing draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ...egraphics{../pictures/hw_trojans_nets.jpg}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+ (introduction.tex
+<../pictures/logicGates.png, id=11, 448.67625pt x 207.02344pt>
+File: ../pictures/logicGates.png Graphic file (type png)
+<use ../pictures/logicGates.png>
+Package pdftex.def Info: ../pictures/logicGates.png  used on input line 25.
+(pdftex.def)             Requested size: 345.0pt x 159.19055pt.
 ) [3
 
 
-]
+ <../pictures/logicGates.png>]
+\openout2 = `state_of_the_art.aux'.
+
+ (state_of_the_art.tex
+<../pictures/hw_trojan_nets.jpg, id=15, 624.83438pt x 264.99pt>
+File: ../pictures/hw_trojan_nets.jpg Graphic file (type jpg)
+<use ../pictures/hw_trojan_nets.jpg>
+Package pdftex.def Info: ../pictures/hw_trojan_nets.jpg  used on input line 31.
+
+(pdftex.def)             Requested size: 345.0pt x 146.31506pt.
+) [4
+
+
+ <../pictures/hw_trojan_nets.jpg>]
 \openout2 = `metholodgy.aux'.
 
  (metholodgy.tex
-! Undefined control sequence.
-l.16 design that is published via \gls
-                                      {oc}. We are interested in the followi...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.20 	\item{\Gls
-                {url} to the compressed design archive}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.24 	\item{The \gls
-                    {hdl} in which the design is specified and implemented}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.26 ...tegory in which a design is listed on \gls
-                                                  {oc}}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.28 	\item{The \gls
-                    {hdl} files of the design}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.37 that we do not have to scrape the entire \gls
-                                                  {oc} web site every time w...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+<../pictures/jsonFileFormatDescription.JPG, id=19, 1057.70157pt x 463.7325pt>
+File: ../pictures/jsonFileFormatDescription.JPG Graphic file (type jpg)
+<use ../pictures/jsonFileFormatDescription.JPG>
+Package pdftex.def Info: ../pictures/jsonFileFormatDescription.JPG  used on inp
+ut line 43.
+(pdftex.def)             Requested size: 345.0pt x 151.25612pt.
+ [5
 
 
-LaTeX Warning: File `fig/jsonFileFormatDescription.JPG' not found on input line
- 43.
-
-
-! Package pdftex.def Error: File `fig/jsonFileFormatDescription.JPG' not found:
- using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.43 ...raphics{fig/jsonFileFormatDescription.JPG}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Undefined control sequence.
-l.48 Figure \Cref
-                 {fig:jsonFormat} shows an example of the content of the .JS...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.53 folder. Since \gls
-                       {oc} requires an account to be able to download hardw...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.54 ...unction to send a POST request to the \gls
-                                                  {oc} webpage,
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.57 Because all project files from the \gls
-                                            {oc} database are provided as ta...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.61 Projects from \gls
-                       {oc} are solely provided as *.tar.gz compressed archi...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.61 ...d as *.tar.gz compressed archive. The \gls
-                                                  {python}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.64 ...iated hardware category (as stated by \gls
-                                                  {oc}). After that, the file
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.65 ...analysed. If those endings indicate a \gls
-                                                  {HDL} file, the path
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[4
-
-
-]
-! Undefined control sequence.
-l.76 .JSON file (\Cref
-                      {lst:example}).
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.79 For \gls
-             {vhdl} and SystemVerilog, the \lstinline{verific} frontend is u...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.79 ...ls{vhdl} and SystemVerilog, the \lstinline
-                                                  {verific} frontend is used...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.80 we use the \lstinline
-                          {read_verilog} frontend. Once any combination of \...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.80 we use the \lstinline{read_
-                                verilog} frontend. Once any combination of \...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 80.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 80.
-! Extra }, or forgotten $.
-l.80 we use the \lstinline{read_verilog}
-                                         frontend. Once any combination of \...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Undefined control sequence.
-l.80 ...og} frontend. Once any combination of \gls
-                                                  {hdl} files
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.83 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (489.64018pt too wide) in paragraph at lines 78--83
-\OT1/cmr/m/n/10 the read$[]\OML/cmm/m/it/10 erilogfrontend:Onceanycombinationof
-[]fileshasbeenloaded; asynthesizerunattemptstogenerateasingleHDLfilefromtheprov
-idedfiles; whichsolelycontainsprimitivelogicblocks:$ 
- []
-
-! Undefined control sequence.
-l.87 the Vunit~\autocite
-                        {VUnit} python project, which offers a function to r...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.87 ...which offers a function to return the \gls
-                                                  {vhdl}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-) [5]
+ <../pictures/jsonFileFormatDescription.JPG>]) [6] [7]
 \openout2 = `discussion.aux'.
 
- (discussion.tex) [6
+ (discussion.tex) [8
 
 
 ]
 \openout2 = `conclusion.aux'.
 
- (conclusion.tex) [7
+ (conclusion.tex) [9
 
 
-] (test_main.aux (abstract.aux)
-(introduction.aux) (state_of_the_art.aux) (metholodgy.aux) (discussion.aux)
-(conclusion.aux))
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 80 ({)
-### bottom level 
+] (test_main.aux (abstract.aux) (glossary.aux) (introduction.aux) (state_of_the
+_art.aux) (metholodgy.aux)
+(discussion.aux) (conclusion.aux)) ) 
 Here is how much of TeX's memory you used:
- 1474 strings out of 492973
- 21466 string characters out of 3135932
- 85479 words of memory out of 3000000
- 5317 multiletter control sequences out of 15000+200000
- 5326 words of font info for 20 fonts, out of 3000000 for 9000
+ 9420 strings out of 492973
+ 149474 string characters out of 3135932
+ 265879 words of memory out of 3000000
+ 13109 multiletter control sequences out of 15000+200000
+ 5158 words of font info for 19 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,4n,25p,278b,203s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
-x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on test_main.pdf (7 pages, 103808 bytes).
+ 45i,5n,41p,1998b,1022s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmr10.pfb>
+Output written on test_main.pdf (9 pages, 343925 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
+ 47 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

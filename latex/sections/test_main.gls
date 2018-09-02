@@ -1,0 +1,25 @@
+\newglossaryentry{oc}
+{
+  name=OpenCores,
+  description={OpenCores.com is a sharing platform for open source hardware designs.}
+}
+\newglossaryentry{url}
+{
+  name=OpenCores,
+  description={dummy entry}
+}
+\newglossaryentry{hdl}
+{
+  name=OpenCores,
+  description={dummy entry}
+}
+\newglossaryentry{python}
+{
+  name=OpenCores,
+  description={dummy entry}
+}
+\newglossaryentry{vhdl}
+{
+  name=OpenCores,
+  description={dummy entry}
+}

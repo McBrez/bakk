@@ -17,7 +17,7 @@ design that is published via \gls{oc}. We are interested in the following data:
 
 \begin{enumerate}
 
-	\item{\Gls{url} to the compressed design archive}
+	\item{\gls{url} to the compressed design archive}
 
 	\item{The name of the design project}
 
@@ -40,7 +40,7 @@ so information can be imported from other sources then scrapy aswell.
 
 \begin{figure}[tb]
 	\centering
-	\includegraphics{fig/jsonFileFormatDescription.JPG}
+	\includegraphics[width=\textwidth,keepaspectratio]{../pictures/jsonFileFormatDescription.JPG}
 	\caption{.JSON File Format Description}
 	\label{fig:jsonFormat}
 \end{figure}
@@ -62,7 +62,7 @@ Projects from \gls{oc} are solely provided as *.tar.gz compressed archive. The \
 module tarfile enables the extraction of those archives. Additionally 
 to the decompression, we sort the project files into folders corresponding to 
 their associated hardware category (as stated by \gls{oc}). After that, the file 
-endings of the files are analysed. If those endings indicate a \gls{HDL} file, the path 
+endings of the files are analysed. If those endings indicate a \gls{hdl} file, the path 
 to this file is added to the aforementioned .JSON file, in order to be able to
 address the design files of a project in later steps.
 
@@ -73,7 +73,7 @@ order to do this, yosys expects a yosys script file, which holds all yosys comma
 that should be executed on a set of files. This script file can either be provided
 by the user before a programm run, or a generic one can be generated automatically 
 during a programm run, according to the files that have been provided with the 
-.JSON file (\Cref{lst:example}). 
+.JSON file. 
 
 The synthesis tool's frontend is chosen based on the language of each design file.
 For \gls{vhdl} and SystemVerilog, the \lstinline{verific} frontend is used. For Verilog,
@@ -84,7 +84,7 @@ files, which solely contains primitive logic blocks.
 Since yosys does not support automatic dependency recognition of vhdl files, a custom solution
 had to be found, to determine the load order of vhdl files (in the case that the user decides
 that yosys scripts should be generated automatically). To accomplish this, we slightly modified 
-the Vunit~\autocite{VUnit} python project, which offers a function to return the \gls{vhdl} 
+the Vunit python project, which offers a function to return the \gls{vhdl} 
 files in an ordered list. The vhdl files can then be loaded in the order dictated by this list.  
 
 \subsubsection{Naming designs} 
