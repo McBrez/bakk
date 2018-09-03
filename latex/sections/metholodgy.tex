@@ -18,21 +18,20 @@ Level Connections (see \label{logicGates} for referencce). The vector gets stand
 so small designs remain compareable to bigger ones. This vector shall then act as 
 categorization criteria, to sort the design into predefined design categories. 
 Those categories are clusters in the vector space the match vector is part of. 
-If the matchvector points into such a cluster, the design is identified with the
+If the match vector points into such a cluster, the design is identified with the
 corresponding category.
 This section elaborates on the details of finding a match vector of a design, and
 how the category clusters are defined. 
 
 \subsection{Cluster Identification}
-As Mentionend above, before any categorization can take place, the categories itself
+As mentionend above, before any categorization can take place, the categories itself
 have to be defined. In our model, categories are clusters in a n-dimensional vector space. 
 Therefore, the task is to identify clusters in this vector space, and name them. 
 To do this, we determine the match vector of well known designs. Since
 the categorization of those designs is already available, the vectors that originate from designs with identical categorizations, can be grouped together to clusters. 
 
-Since it is expected, that the validity of such clusters increases with the number of analyzed designs, an automatic process has to be established, to enable the analysis of a great amount of designs. To achieve this, we use Scrapy, a Python web scraping tool, to 
-automatically obtain design files and corresponding meta-information for each 
-design that is published via \gls{oc}. We are interested in the following data:
+It is expected, that the validity of such clusters increases with the number of analyzed designs. Therefore an automatic process has to be established, to enable the analysis of a great amount of designs. To achieve this, we use Scrapy, a Python web scraping tool, to 
+automatically obtain design files and corresponding meta-information. \gls{oc}serves as source for those design files, and provides following information. 
 
 \begin{enumerate}
 
@@ -42,13 +41,20 @@ design that is published via \gls{oc}. We are interested in the following data:
 
 	\item{The \gls{hdl} in which the design is specified and implemented}
 
-	\item{The category in which a design is listed on \gls{oc}}
+	\item{The category in which a design is listed}
 	
 	\item{The \gls{hdl} files of the design}
 	
 \end{enumerate}
+The following chapters explain in detail, how those informations are gathered, and processed into a match vector. 
 
 \subsubsection{Scraping OpenCores project web sites} 
+\gls{oc} does not offer an interface to automatically download all available design files. Therefore it has to be resorted to the web page, which is optimized for human interaction, but not for machine readability. Tools which are spezialized in translating human readable content into structured, machine oriented data sets, are called Scrapers. Scrapy is one of them, and provides multiple python classes which enable extensible web scraping. 
+
+Scrapy's input is the HTML representation of the web page, which it is able to retrieve by itself. The HTML code is scanned for its tags, which are then exposed in python classes. Those python classes are available to the user.  
+
+
+Like most web pages, \gls{oc} is built in a tree-like structure.  
 The scraped data is temporarily stored into Python class objects. The information 
 in these objects are written to a .JSON file, in order to make them persistent (such
 that we do not have to scrape the entire \gls{oc} web site every time we use our 

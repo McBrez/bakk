@@ -1,0 +1,111 @@
+\begin{tikzpicture}[
+	every node/.style={font=\footnotesize,thick,align=center},
+	ifel/.style={diamond,draw,align=center,inner sep=0pt,minimum size=1cm},
+	act/.append style={draw,minimum width=2.5cm,minimum height=1em,align=center},
+	node distance=.5cm,
+	ed/.style={->,>=stealth',shorten <=2pt, shorten >=2pt,thick},
+	lbl/.style={font=\scriptsize,align=center, midway, above},
+	lblifel/.style={lbl,outer sep = 0,inner sep=0},
+	junction/.style={fill,circle,inner sep=0,minimum size=2.5pt,outer sep=0},
+	node distance=.5cm and 2cm,
+	dom/.style={minimum width=2cm},
+	b/.append style={fill=blue!20},
+	g/.append style={fill=green!20},
+]
+
+	\node(design) {Open cores\\design database};
+
+	%% Show domains
+	\node(design-domain)[dom,above=.25 of design] {\textbf{Design} \textbf{domain}};
+	\node(info-domain)[dom,right=of design-domain] {\textbf{Information} \textbf{domain}};
+	\node(data-domain)[dom,right=of info-domain] {\textbf{Data} \textbf{domain}};
+
+	%% Draw flow
+	\node(j1) [junction, below=of design]{};
+	\draw[ed] (design) -- (j1);
+
+	\node(scrape) at (info-domain |- j1) [g,act]{Scrape};
+	\draw[ed] (j1) -- node[lbl]{HTML} (scrape);
+
+	\node (meta) [below=of scrape] {Design meta\\information};
+%	\draw[ed] (scrape) -- node[lbl,right]{Database} (meta);
+	\draw[ed] (scrape) -- (meta);
+
+	\node(download) at (design-domain |- meta) [g,act] {Download};
+	\draw[ed] (meta) -- node[lbl]{URL} (download);
+	\draw[ed] (j1) -- (download);
+
+	% Archive
+	\node (archive) [below=of download] {Compressed\\archives};
+	\draw[ed] (download) -- (archive);
+
+	% Decompress design
+	\node (decompress) [g,act, below=of archive]{Decompress};
+	\draw[ed] (archive) -- (decompress);
+
+	% Design files
+	\node (files) [below=of decompress]{Design files};
+	\draw [ed] (decompress) -- (files);
+
+	% Read
+	\node (read) [g,act, below=of files] {Read};
+	\node (j2) at (info-domain |- read)[junction]{};
+	\draw[ed] (files) -- (read);
+	\draw[ed] (meta) -- (j2);
+	\draw[ed] (j2) --  node[lbl]{Language} (read);
+
+	% In-memory design
+	\node (in-memory) [below=of read]{In-memory\\designs};
+	\draw[ed] (read) -- (in-memory);
+
+	\node (name) [g,act, below=of in-memory] {Name};
+	\node (j3) at (info-domain |- name)[junction]{};
+	\draw[ed] (in-memory) -- (name);
+	\draw[ed] (j2) -- (j3);
+	\draw[ed] (j3) -- node[lbl]{Name} (name);
+
+	\node (named) [below=of name] {Named\\designs};
+	\draw[ed] (name) -- (named);
+
+	% Calculate standardized match vectors
+	\node (match) at (data-domain |- named) [b,act]{Match};
+	\draw[ed] (named) -- ($ (info-domain |- match) -(2pt,0) $) arc [start angle=180,end angle=0,radius=2pt] -- (match);
+
+	\node (mv) [below=of match]{Match\\vectors};
+%	\draw[ed] (match) -- ($ (info-domain |- match) -(2pt,0) $) arc [start angle=180,end angle=0,radius=2pt] -- (mv);
+	\draw[ed] (match) -- (mv);
+
+	% Detect clusters of match vectors
+	\node (cluster) [b,act, below=of mv] {Cluster};
+	\draw[ed] (mv) -- (cluster);
+
+	\node (clusters) [below=of cluster] {Clusters};
+	\draw[ed] (cluster) -- (clusters);
+	
+	% Create labels for evaluating the clustering algorithm
+	\node(label) at (info-domain |- cluster) [b,act] {Label};
+	\node (j4) at (design-domain |- label)[junction]{};
+	\draw[ed] (j3) -- node[lbl,right,near end]{Category} (label);
+	\draw[ed] (named) -- (j4);
+	\draw[ed] (j4) -- (label);
+
+	\node (labels) at (info-domain |- clusters) {Labels};
+	\draw[ed] (label) -- (labels);
+
+	% Evaluate quality of clustering method
+	\node (evaluate) [b,act,below=of labels] {Evaluate};
+	\draw[ed] (labels) -- (evaluate);
+	\draw[ed] (clusters) |- (evaluate);
+
+	\node(metrics)[below=of evaluate]{Cluster\\metrics};
+	\draw[ed] (evaluate) -- (metrics);
+
+	% Annotate design
+	\node (annotate) at (design-domain |- metrics) [b,act] {Annotate};
+	\draw[ed] (j4) -- (annotate);
+	\draw[ed] (metrics) -- (annotate);
+
+	\node (annotated) [below=of annotate] {Classified\\designs};
+	\draw[ed] (annotate) -- (annotated);
+
+\end{tikzpicture}

@@ -234,14 +234,7 @@ For finding similarities within sensor data, statistics provides us with a numbe
 
 To give an introduction in statistical methods in building automation, I will discuss the example of a temperature sensor located in an office. The sensor is attached to a sensor node (mote) that has a programmable hysteresis, in our case we use $\pm 0.1 $°C. If the sensor recognizes a temperature difference greater than that, it launches a message that is transported via the network to a data sink mote. If the temperature stays stable, the mote sends ``keep alive'' messages with the current temperature every 15 minutes.
 This is the only possibility to find out if the sensor is still in operation. 
-\begin{figure}
-\setlength{\unitlength}{1mm}
-\begin{center}
-\includegraphics[width=15cm, height=10cm]{temperature}
-\end{center}
 
-\caption{Data from a temperature sensor collected over one day. In periods where the temperature is changing quickly the sensor delivers more values than otherwise because of its hysteresis. In periods of constant temperature the sensor gives ``keep alive's'' every 15 minutes.\label{temp-fig}}
-\end{figure}
 The sink mote is connected to a PC via USB. On the PC the message format is converted and the data stored in a data base.\\ The reason for this comprehensive description of the data flow lies in the fact that the way the data is generated, transported and stored influences the choice of the statistical model. The above-mentioned sensor uses a combination of synchronous and asynchronous messages. An example of the sensor data for one day in the mentioned office is given in \Fig{temp-fig}.
 
 Probability density estimation is commonly seen as the problem of modeling a probability density function (pdf) $p(\vec{x})$, given a finite ($N$) number of data points\footnote{In the field of statistics a data point is a single typed measurement. The term typed refers to the data type of the data point regardless of the type of the data source. In the above-stated example the type would be a three-dimensional vector of real values.} $\vec{x}^{n}$, $n=1, ..., N$. $\vec{x}$ being a $d$ dimensional data point (e.g. brightness, humidity and temperature in case of a combined senor). The following subsections concerning pdfs follow the notation of \citep{Bis95}.\\
@@ -442,12 +435,6 @@ Latchupeffekt & Latch-up-Effekt & -- & -- \\
 \end{table}
 \footnotetext{Ist mit Vorsicht anzuwenden, da die englischen Ausdrücke oft viel gebräuchlicher sind.}
 
-\begin{figure}
-\centering
-	\includegraphics{DA_title}
-	\caption{Das vorgegebene Deckblatt.}
-	\label{f1}
-\end{figure}
 Das Deckblatt ist vom jeweiligen Dekanat vorgegeben, Abbildung \ref{f1} zeigt ein typisches Beispiel. \\
 Die Kurzfassung sollte eine ganze Seite nicht Äuberschreiten. Dies darf aber nicht mittels Schriftgröße und Zeilenabstand erreicht werden, sondern durch inhaltliche Straffung. Meistens ist die Kurzfassung unabhängig von der für die Arbeit selbst gewählten Sprache sowohl in Englisch als auch in Deutsch abzufassen. \\
 Der Inhalt der Diplomarbeit sollte mit dem Betreuer abgesprochen werden. Da viele Diplomarbeiten aus einem theoretischen und einem praktischen Teil bestehen, wird sich das auch in der Gliederung der schriftlichen Ausarbeitung widerspiegeln. Dabei sollte auch die Beschreibung des praktischen Teils nicht zu kurz kommen. \\

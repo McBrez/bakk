@@ -4,13 +4,46 @@
 \usepackage{glossaries}
 \usepackage{cleveref}
 \usepackage{listings}
+\usepackage{tikz}
+\usepackage{tikz-timing}
 
 % GLOSSARY
-\makeglossaries
+\makenoidxglossaries
+\newglossaryentry{oc}
+{
+  name=OpenCores,
+  description={OpenCores.com is a sharing platform for open source hardware designs.}
+}
+\newglossaryentry{url}
+{
+  name=Unique Resource Locator.,
+  description={dummy entry}
+}
+\newglossaryentry{hdl}
+{
+  name=Hardware Description Language,
+  description={dummy entry}
+}
+\newglossaryentry{python}
+{
+  name=OpenCores,
+  description={dummy entry}
+}
+\newglossaryentry{vhdl}
+{
+  name=OpenCores,
+  description={dummy entry}
+}
 
+% TITLE
+\title{A dummy title}
+\author{A dummy Author}
+
+% DOCUMENT BEGIN
 \begin{document}
+  \maketitle
   \include{abstract}
-  \include{glossary}
+  \printnoidxglossaries
   \include{introduction}
   \include{state_of_the_art}
   \include{metholodgy}

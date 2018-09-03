@@ -1,0 +1,169 @@
+[General]
+kile_livePreviewEnabled=true
+kile_livePreviewStatusUserSpecified=false
+kile_livePreviewTool=LivePreview-PDFLaTeX
+lastDocument=sections/metholodgy.tex
+
+[document-settings,item:sections/abstract.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:sections/conclusion.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:sections/discussion.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:sections/glossary.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:sections/introduction.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:sections/metholodgy.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:sections/state_of_the_art.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:sections/test_main.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[item:bakk.kilepr]
+open=false
+order=-1
+
+[item:sections/abstract.tex]
+open=true
+order=1
+
+[item:sections/conclusion.tex]
+open=true
+order=2
+
+[item:sections/discussion.tex]
+open=true
+order=3
+
+[item:sections/glossary.tex]
+open=true
+order=7
+
+[item:sections/introduction.tex]
+open=true
+order=4
+
+[item:sections/metholodgy.tex]
+open=true
+order=5
+
+[item:sections/state_of_the_art.tex]
+open=true
+order=6
+
+[item:sections/test_main.tex]
+open=true
+order=0
+
+[view-settings,view=0,item:sections/abstract.tex]
+CursorColumn=0
+CursorLine=0
+JumpList=
+TextFolding=[]
+ViMarks=
+
+[view-settings,view=0,item:sections/conclusion.tex]
+CursorColumn=0
+CursorLine=0
+JumpList=
+TextFolding=[]
+ViMarks=
+
+[view-settings,view=0,item:sections/discussion.tex]
+CursorColumn=0
+CursorLine=0
+JumpList=
+TextFolding=[]
+ViMarks=
+
+[view-settings,view=0,item:sections/glossary.tex]
+CursorColumn=0
+CursorLine=2
+JumpList=
+TextFolding=[]
+ViMarks=
+
+[view-settings,view=0,item:sections/introduction.tex]
+CursorColumn=0
+CursorLine=0
+JumpList=
+TextFolding=[]
+ViMarks=
+
+[view-settings,view=0,item:sections/metholodgy.tex]
+CursorColumn=228
+CursorLine=53
+JumpList=
+TextFolding=[]
+ViMarks=.,53,227,[,53,223,],53,227
+
+[view-settings,view=0,item:sections/state_of_the_art.tex]
+CursorColumn=0
+CursorLine=0
+JumpList=
+TextFolding=[]
+ViMarks=
+
+[view-settings,view=0,item:sections/test_main.tex]
+CursorColumn=21
+CursorLine=11
+JumpList=
+TextFolding=[]
+ViMarks=.,7,16,[,7,16,],7,16
