@@ -51,7 +51,13 @@ The following chapters explain in detail, how those informations are gathered, a
 \subsubsection{Scraping OpenCores project web sites} 
 \gls{oc} does not offer an interface to automatically download all available design files. Therefore it has to be resorted to the web page, which is optimized for human interaction, but not for machine readability. Tools which are spezialized in translating human readable content into structured, machine oriented data sets, are called Scrapers. Scrapy is one of them, and provides multiple python classes which enable extensible web scraping. 
 
-Scrapy's input is the HTML representation of the web page, which it is able to retrieve by itself. The HTML code is scanned for its tags, which are then exposed in python classes. Those python classes are available to the user.  
+Scrapy's input is the HTML representation of the web page, which it is able to retrieve by itself, by providing a URL link to the web page. The HTML code is scanned for its elements.  Those are then parsed into python classes, and exposed to the user. The content of the parsed classes can be reorganized into user defined python classes, and passed to other user defined functions, which, among others, can store those informations persistently on a filesystem. Another option is to use HTML objects like Hyperlinks to further fork into the web page.
+
+For our application, the first challange is, to authenticate in \gls{oc} user system, since designs are only downloadable while logged in with a cost free \gls{oc} account. Login information is often communicated via POST Messages, which encode the message content into the message header. In the login case, The login information is encoded into the header. The web page returns a authentication token, which is stored as cookie and enables access to the web page. Scrapy is able to generate such POST messages. 
+
+As \gls{oc}'s web page is built, like most web pages, in a tree like structure (see <<LABEL>> for reference), scrapy is configured to start from the root page <<URL>>, where the links to all projects reside.   
+
+
 
 
 Like most web pages, \gls{oc} is built in a tree-like structure.  
@@ -61,7 +67,7 @@ that we do not have to scrape the entire \gls{oc} web site every time we use our
 classification framework). For this .JSON file, a specific format has been defined, 
 so information can be imported from other sources then scrapy aswell. 
 
-\begin{figure}[tb]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth,keepaspectratio]{../pictures/jsonFileFormatDescription.JPG}
 	\caption{.JSON File Format Description}
