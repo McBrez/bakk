@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800) (preloaded format=pdflatex 2018.9.2)  14 SEP 2018 08:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.23)  1 OCT 2018 18:59
 entering extended mode
 **./test_main.tex
 (test_main.tex
@@ -617,24 +617,28 @@ ecorations.pathmorphing.code.tex"))
 \c@tikztimingrows=\count160
 \c@tikztimingtrans=\count161
 \c@tikztimingtranspos=\count162
-) (test_main.aux (abstract.aux)
-(introduction.aux) (state_of_the_art.aux) (metholodgy.aux) (discussion.aux)
-(conclusion.aux))
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+) (test_main.aux
+(abstract.aux) (introduction.aux) (state_of_the_art.aux) (used_technologies.aux
+) (metholodgy.aux) (discussion.aux) (conclusion.aux))
 \openout1 = `test_main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
- ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count163
 \scratchdimen=\dimen183
@@ -699,93 +703,117 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-(test_main.glsdefs)
 \c@lstlisting=\count169
- ABD: EveryShipout initializing macros [1
 
-{C:/Users/davfr/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+ABD: EveryShipout initializing macros [1
+
+{C:/Users/David/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 \openout2 = `abstract.aux'.
 
  (abstract.tex) [2
 
-]
-Using TeX to sort glossary entries---this may take a while
-[3
+] (test_main.toc)
+\tf@toc=\write4
+\openout4 = `test_main.toc'.
+
+ [3
 
 ]
+Using TeX to sort glossary entries---this may take a while
+[4]
 \openout2 = `introduction.aux'.
 
  (introduction.tex
-<../pictures/logicGates.png, id=19, 448.67625pt x 207.02344pt>
+<../pictures/logicGates.png, id=22, 448.67625pt x 207.02344pt>
 File: ../pictures/logicGates.png Graphic file (type png)
 <use ../pictures/logicGates.png>
 Package pdftex.def Info: ../pictures/logicGates.png  used on input line 25.
 (pdftex.def)             Requested size: 345.0pt x 159.19055pt.
-) [4
+) [5
 
  <../pictures/logicGates.png>]
 \openout2 = `state_of_the_art.aux'.
 
  (state_of_the_art.tex
-<../pictures/hw_trojan_nets.jpg, id=23, 624.83438pt x 264.99pt>
+<../pictures/hw_trojan_nets.jpg, id=26, 624.83438pt x 264.99pt>
 File: ../pictures/hw_trojan_nets.jpg Graphic file (type jpg)
 <use ../pictures/hw_trojan_nets.jpg>
 Package pdftex.def Info: ../pictures/hw_trojan_nets.jpg  used on input line 32.
 
 (pdftex.def)             Requested size: 345.0pt x 146.31506pt.
 )
-[5
+[6
 
 
  <../pictures/hw_trojan_nets.jpg>]
-\openout2 = `metholodgy.aux'.
+\openout2 = `used_technologies.aux'.
 
- (metholodgy.tex [6
+ (used_technologies.tex) [7
 
 
 ]
-<../pictures/jsonFileFormatDescription.JPG, id=30, 1057.70157pt x 463.7325pt>
+\openout2 = `metholodgy.aux'.
+
+
+(metholodgy.tex [8
+
+
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 68.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 68.
+
+[9]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 92.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <8> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 92.
+ [10]
+<../pictures/jsonFileFormatDescription.JPG, id=47, 1057.70157pt x 463.7325pt>
 File: ../pictures/jsonFileFormatDescription.JPG Graphic file (type jpg)
 <use ../pictures/jsonFileFormatDescription.JPG>
 Package pdftex.def Info: ../pictures/jsonFileFormatDescription.JPG  used on inp
-ut line 75.
+ut line 137.
 (pdftex.def)             Requested size: 345.0pt x 151.25612pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7] [8 <../pictures/jsonFileFormatDescription.JPG>]) [9]
+ [11 <../pictures/jsonFileFormatDescription.JPG>]) [12]
 \openout2 = `discussion.aux'.
 
- (discussion.tex)
-[10
+ (discussion.tex) [13
 
 
 ]
 \openout2 = `conclusion.aux'.
 
- (conclusion.tex) [11
+ (conclusion.tex) [14
 
 
-] (test_main.aux (abstract.aux) (introduction.aux)
-(state_of_the_art.aux) (metholodgy.aux) (discussion.aux) (conclusion.aux)) ) 
+] (test_main.aux (abstract.aux) (introduction.aux) (state_of_the_art.aux)
+(used_technologies.aux) (metholodgy.aux) (discussion.aux) (conclusion.aux)) ) 
 Here is how much of TeX's memory you used:
- 20595 strings out of 492973
- 396318 string characters out of 3135933
- 528175 words of memory out of 3000000
- 24054 multiletter control sequences out of 15000+200000
- 8569 words of font info for 31 fonts, out of 3000000 for 9000
+ 20855 strings out of 492973
+ 399586 string characters out of 3135932
+ 676426 words of memory out of 3000000
+ 24296 multiletter control sequences out of 15000+200000
+ 9023 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,6n,93p,1998b,1024s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmr17.pfb>
-Output written on test_main.pdf (11 pages, 370791 bytes).
+ 81i,6n,93p,1998b,1837s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on test_main.pdf (14 pages, 427291 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
+ 90 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

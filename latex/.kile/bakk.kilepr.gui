@@ -148,22 +148,22 @@ TextFolding=[]
 ViMarks=
 
 [view-settings,view=0,item:sections/metholodgy.tex]
-CursorColumn=25
-CursorLine=133
+CursorColumn=545
+CursorLine=52
 JumpList=
 TextFolding=[]
-ViMarks=.,61,8,[,61,8,],61,8
+ViMarks=.,54,46,[,54,42,],54,46
 
 [view-settings,view=0,item:sections/state_of_the_art.tex]
 CursorColumn=0
-CursorLine=0
+CursorLine=41
 JumpList=
 TextFolding=[]
 ViMarks=
 
 [view-settings,view=0,item:sections/test_main.tex]
-CursorColumn=21
-CursorLine=11
+CursorColumn=32
+CursorLine=24
 JumpList=
 TextFolding=[]
-ViMarks=.,7,16,[,7,16,],7,16
+ViMarks=.,24,0,[,24,0,],24,7

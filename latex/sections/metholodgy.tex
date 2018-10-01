@@ -30,12 +30,11 @@ Therefore, the task is to identify clusters in this vector space, and name them.
 To do this, we determine the match vector of well known designs. Since
 the categorization of those designs is already available, the vectors that originate from designs with identical categorizations, can be grouped together to clusters. 
 
-It is expected, that the validity of such clusters increases with the number of analyzed designs. Therefore an automatic process has to be established, to enable the analysis of a great amount of designs. To achieve this, we use Scrapy, a Python web scraping tool, to 
-automatically obtain design files and corresponding meta-information. \gls{oc}serves as source for those design files, and provides following information. 
+It is expected, that the validity of such clusters increases with the number of analyzed designs. Therefore an automatic process has to be established, to enable the analysis of a great amount of designs. To achieve this, we use Scrapy, a Python web scraping tool, to automatically obtain design files and corresponding meta-information. \gls{oc} serves as source for those design files, and provides following information: 
 
 \begin{enumerate}
 
-	\item{\gls{url} to the compressed design archive}
+	\item{\gls{url} to the design archive}
 
 	\item{The name of the design project}
 
@@ -53,13 +52,76 @@ The following chapters explain in detail, how those informations are gathered, a
 
 Scrapy's input is the HTML representation of the web page, which it is able to retrieve by itself, by providing a URL link to the web page. The HTML code is scanned for its elements.  Those are then parsed into python classes, and exposed to the user. The content of the parsed classes can be reorganized into user defined python classes, and passed to other user defined functions, which, among others, can store those informations persistently on a filesystem. Another option is to use HTML objects like Hyperlinks to further fork into the web page.
 
-\textbf{Authentication}
+\begin{lstlisting}[caption = {Scrapy Main Class}]
+ class IPspider_oc(scrapy.Spider):
+    """The class, which is called by the scrapy framework. """
+    name = 'ipspider_oc'   # the name of the spider
 
-For our application, the first challenge is, to authenticate via the \gls{oc} user system, since designs are only downloadable while logged in with a cost free \gls{oc} account. Login information is often communicated via HTML POST Messages, which encode the message content into the message header. In the login case, the login information is encoded into the header. The web page returns an authentication token, which is stored as cookie and enables access to the web page. Scrapy is able to generate such POST messages. 
+    def start_requests(self):
+        return [scrapy.Request(
+          url = "https://opencores.org",
+          callback=self.login)]
 
-<< detailed engineering here >> 
+    def login(self, response):
+        return scrapy.FormRequest.from_response( 
+          response, 
+          formdata={'user' : 'davFreismuth',  
+                    'pass' : 'Qlghkeul'}, 
+          callback=self.redirect )
 
-\textbf{Traversing of the Web Page}
+    def redirect(self,  response):
+        return scrapy.Request( 
+          url = "https://opencores.org/projects?lang=0&stage=5&license=0&wishbone_version=0", 
+          callback=self.parse )
+                                                
+    def parse(self, response):
+        """Default callback for scrapy. Starts at start_url, fetches the url of the different project pages, and calls parse_metadata for each project page"""
+        for href in response.css('td.project a::attr(href)'):
+            yield response.follow(href, self.parse_metadata)
+
+    def parse_metadata(self, response):
+        """parses metadata of an opencore.org project page and returns a scrapy item object."""
+        def scrape_line(strArray,  removeStr):  
+            '''helper function which iterates trough the string array 'strArray', selects the first entry which contains 'removeStr' and returns the string without removeStr and whitespaces.'''
+            for str in strArray:
+                if(str.find(removeStr) != -1):
+                    retStr = str.replace(removeStr,  '')
+                    return retStr.strip()
+            
+        def scrape_href(line):  
+            """helper function, which gets an html <a> element, checks if it has inner html and returns the text of the inner html"""
+            start = line.find(">")
+            end = line.find("<", start)
+            if((start + 1) == end):
+                return ""
+            else:
+                return line[(start+1):(end)]
+            
+        #fill up the fields
+        hdl_IP =  HDL_IP()
+        hdl_IP['name'] = scrape_line(response.css('h2 + p::text').extract(), 'Name:')
+        hdl_IP['created'] = scrape_line(response.css('h2 + p::text').extract(), 'Created:')
+        hdl_IP['updated'] = scrape_line(response.css('h2 + p::text').extract(), 'Updated:')
+        hdl_IP['file_urls'] = ['https://opencores.org' + response.css('p a::attr(href)')[1].extract()]
+        category = scrape_href(response.css('p a')[5].extract())
+        category = category.lower()
+        category = category.replace(' ', '_')
+        hdl_IP['category'] = category
+        hdl_IP['language'] = scrape_href(response.css('p a')[6].extract())
+        hdl_IP['license'] = scrape_line(response.css('h2 + p::text').extract(),  'License:')
+        hdl_IP['basePath'] = self.settings['FILES_STORE']
+        yield hdl_IP
+\end{lstlisting}
+
+
+\paragraph*{Authentication \\}
+
+For our application, the first challenge is, to authenticate via the \gls{oc} user system, since designs are only downloadable while logged in with a cost free \gls{oc} account. Login information is often communicated via HTML POST Messages, which encode the message content into the message header. In the login case, the login information is encoded into the header. The web page returns an authentication token, which is stored as cookie and enables access to the web page. Scrapy is natively able to generate send such POST messages and exposes the answer to such a POST messages in Python classes, for further actions. 
+
+
+
+
+\paragraph*{Traversing of the Web Page \\}
 
 As \gls{oc}'s web page is built, like most web pages, in a tree like structure (see <<LABEL>> for reference), scrapy has been configured to start from the root page <<URL>>, where the links to all projects reside. It then calls each project page, by filtering for the <h> elements of the 
 
