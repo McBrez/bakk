@@ -11,26 +11,18 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Metholodgy}
 
-To achieve our goal of the categorization of hardware designs trough a structural
-analysis of the corresponding HDL Design, we first propose a standardized 
-match vector, which is calculated from the Design's Two-to-One and One-to-One Gate
-Level Connections (see \label{logicGates} for referencce). The vector gets standardized,
-so small designs remain compareable to bigger ones. This vector shall then act as 
-categorization criteria, to sort the design into predefined design categories. 
-Those categories are clusters in the vector space the match vector is part of. 
-If the match vector points into such a cluster, the design is identified with the
-corresponding category.
+To achieve our goal of the categorization of hardware designs trough a structural analysis of the corresponding HDL Design, we firstly propose a non-standardized match vector, which contains the count of the Design's Two-to-One and One-to-One Gate Level Connections (see \label{logicGates} referencce) as each of its entries, and secondly a standardized match vector, which reduces the information hold by the non-standardized match vector down to a two dimensional vector. This standardized match vector shall then act as categorization criteria, to sort the design into predefined design categories. Those categories are clusters in the vector space the standardized match vector is part of. If the match vector points into such a cluster, the design is identified with the corresponding category.
 This section elaborates on the details of finding a match vector of a design, and
 how the category clusters are defined. 
 
 \subsection{Cluster Identification}
 As mentionend above, before any categorization can take place, the categories itself
-have to be defined. In our model, categories are clusters in a n-dimensional vector space. 
+have to be defined. In our model, categories are clusters in a two dimensional vector space. 
 Therefore, the task is to identify clusters in this vector space, and name them. 
-To do this, we determine the match vector of well known designs. Since
+To do this, we determine the match vectors of well known designs. Since
 the categorization of those designs is already available, the vectors that originate from designs with identical categorizations, can be grouped together to clusters. 
 
-It is expected, that the validity of such clusters increases with the number of analyzed designs. Therefore an automatic process has to be established, to enable the analysis of a great amount of designs. To achieve this, we use Scrapy, a Python web scraping tool, to automatically obtain design files and corresponding meta-information. \gls{oc} serves as source for those design files, and provides following information: 
+It is expected, that the validity of such clusters increases with the number of analyzed designs. Therefore an automatic process has to be established, to enable the analysis of a great amount of designs. To achieve this, we use Scrapy, a Python web scraping tool, to automatically obtain design files and corresponding meta-information. \gls{oc} serves as source for those design files, and provides (among others) following information: 
 
 \begin{enumerate}
 
@@ -47,12 +39,30 @@ It is expected, that the validity of such clusters increases with the number of 
 \end{enumerate}
 The following chapters explain in detail, how those informations are gathered, and processed into a match vector. 
 
+\begin{figure}
+    \centering
+    \begin{tikzpicture}[scale = 2]
+        \tikzstyle{every node} = [scale = 2, rectangle, fill=gray!30, minimum width = 6em, minimum height = 1em)]
+        \node(Fetch) at (0,0) {Fetch};
+        \node(Download) at (0,-1) {Download};
+        \node(Decompress) at (0,-2) {Decompress};
+        \node(Synthesize) at (0,-3) {Synthesize};
+        \node(Find pass) at (0,-4) {Find Pass};
+        \draw [->] (Fetch) -- (Download);
+        \draw [->] (Download) -- (Decompress);      
+        \draw [->] (Decompress) -- (Synthesize);
+        \draw [->] (Synthesize) -- (Find pass);
+    \end{tikzpicture}
+            
+    \caption{ Stages of the Scrapy process }
+\end{figure}
+
 \subsubsection{Scraping OpenCores project web sites} 
 \gls{oc} does not offer an interface to automatically download all available design files. Therefore it has to be resorted to the web page, which is optimized for human interaction, but not for machine readability. Tools, which are spezialized in translating human readable content into structured, machine oriented data sets, are called Scrapers. Scrapy is one of them, and provides multiple python classes which enable extensible web scraping. 
 
 Scrapy's input is the HTML representation of the web page, which it is able to retrieve by itself, by providing a URL link to the web page. The HTML code is scanned for its elements.  Those are then parsed into python classes, and exposed to the user. The content of the parsed classes can be reorganized into user defined python classes, and passed to other user defined functions, which, among others, can store those informations persistently on a filesystem. Another option is to use HTML objects like Hyperlinks to further fork into the web page.
 
-\begin{lstlisting}[caption = {Scrapy Main Class}]
+\begin{lstlisting}[style = python, caption = {Scrapy Main Class}]
  class IPspider_oc(scrapy.Spider):
     """The class, which is called by the scrapy framework. """
     name = 'ipspider_oc'   # the name of the spider
