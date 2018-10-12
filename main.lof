@@ -1,4 +1,5 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \contentsline {figure}{\numberline {1}{\ignorespaces Example of a Two to One Connection and an One to One Connection}}{4}{figure.caption.4}
 \contentsline {figure}{\numberline {2}{\ignorespaces Register Transfer Level depiction of the proposed Hardware Trojan nets \autocite {Oya2015}\relax }}{5}{figure.caption.5}
-\contentsline {figure}{\numberline {4}{\ignorespaces .JSON File Format Description\relax }}{8}{figure.caption.9}
+\contentsline {figure}{\numberline {3}{\ignorespaces Pipeline stages of the \gls {scrapy} implementaion. As seen in the figure, Pipelines can be executed parallelily. Although the final Stage "Clustering" waits on all pipelines to finish. \relax }}{7}{figure.caption.6}
+\contentsline {figure}{\numberline {4}{\ignorespaces .JSON File Format Description\relax }}{9}{figure.caption.9}
