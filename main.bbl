@@ -1,0 +1,73 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Oya2015}{article}{}
+      \name{author}{4}{}{%
+        {{hash=08677015862d7c3e56bbc3974c1d6307}{%
+           family={Oya},
+           familyi={O\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3ba3b470e434482412b7d90accb643f2}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=fc826937871a3343a1a8bd8b3184c0e5}{%
+           family={Yanagisawa},
+           familyi={Y\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=72fb3b065f57b79081d21e83ceddf04d}{%
+           family={Togawa},
+           familyi={T\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{7abb4d816afbfca37e27dd8b7503352f}
+      \strng{fullhash}{3d2663e28f4b913a24686d6b387e2a6d}
+      \strng{bibnamehash}{3d2663e28f4b913a24686d6b387e2a6d}
+      \strng{authorbibnamehash}{3d2663e28f4b913a24686d6b387e2a6d}
+      \strng{authornamehash}{7abb4d816afbfca37e27dd8b7503352f}
+      \strng{authorfullhash}{3d2663e28f4b913a24686d6b387e2a6d}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2015 Design, Automation Test in Europe Conference Exhibition (DATE)}
+      \field{issn}{1530-1591}
+      \field{month}{3}
+      \field{title}{A score-based classification method for identifying Hardware-Trojans at gate-level netlists}
+      \field{year}{2015}
+      \field{pages}{465\bibrangedash 470}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.7873/DATE.2015.0352
+      \endverb
+      \verb{file}
+      \verb :pdf/07092434.pdf:PDF
+      \endverb
+      \keyw{benchmark testing;feature extraction;integrated circuit design;invasive software;pattern classification;semiconductor industry;score-based classification method;hardware-trojan identification;gate-level netlist;digital ICs;semiconductor industry;malicious attackers;IC design phase;RT-level netlist;HT-free netlist;Golden netlist;HT-inserted netlist;Trojan net feature extraction;Trust-HUB gate-level benchmarks;HT-inserted gate-level benchmarks;HT-free gate-level benchmarks;Trojan horses;Logic gates;Benchmark testing;Feature extraction;Integrated circuits;Adders;Logic testing;hardware Trojans;golden-IC free;classification;identification;gate-level netlist}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
