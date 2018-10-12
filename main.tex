@@ -81,103 +81,80 @@
 %
 % Glossary entries
 %
-\newglossaryentry{oc}{
-	name = {oc},
-	description = {Field-programmable gate array},
-	text = {FPGA},
-	first = {field-programmable gate array (FPGA)},
+\newglossaryentry{opencores}{
+	name = {opencores},
+	description = { A wegpage (opencores.org), which provides open source Hardware Design Language Intellectual Properties },
+	text = {OpenCores},
+	first = { OpenCores },
 	plural = {FPGAs},
 	firstplural = {field-programmable gate arrays (FPGAs)},
 }
 %
 \newglossaryentry{url}{
-	name = {url},
-	description = {url},
-	text = {url},
-	first = {true-random number generator (TRNG)},
-	plural = {TRNGs},
-	firstplural = {true-random number generators (TRNGs)},
+	name = {URL},
+	description = { A name used to address a ressource located on a computer or in a computer network },
+	text = {URL},
+	first = { Uniform Ressource Locator (URL)},
+	plural = {URLs},
+	firstplural = {Uniform Ressource Locators (URLs)},
 }
 %
 \newglossaryentry{python}{
-  name={BCD},
-  description={Binary-coded decimal},
-  text={BCD},
-  first={binary-coded decimal (BCD)},
+  name={Python},
+  description={ A interpretive programming language },
+  text={Python},
+  first={ Python },
 }
 %
 \newglossaryentry{hdl}{
   name={HDL},
-  description={Hardware description language},
+  description={Hardware description language; A language to describe the function of Digital Hardware textually.},
   text={HDL},
   first={hardware description language (HDL)},
   plural={HDLs},
   firstplural={hardware description languages (HDLs)},
 }
-
-\newglossaryentry{dicl}{
-  name={DIC-Lab},
-  description={Course held at TU-Wien on applying digital design techniques},
-  text={DIC-Lab},
-  first={Digital-Integrated-Circuits Laboratory (DIC-Lab)},
-}
-
-\newglossaryentry{bbs}{
-  name={BBS},
-  description={Blum-Blum-Shub algorithm},
-  text={BBS},
-  first={Blum-Blum-Shub algorithm (BBS)},
-}
-
-\newglossaryentry{prng}{
-  name={PRNG},
-  description={Pseudo-random number generator (PRNG)},
-  text={PRNG},
-  first={pseudo-random number generator (PRNG)},
-  plural={PRNGs},
-  firstplural={pseudo-random number generators (PRNGs)},
-}
-\newglossaryentry{uart}{
-  name={UART},
-  description={Universal Asynchronous Receiver Transmitter (UART)},
-  text={UART},
-  first={Universal Asynchronous Receiver Transmitter (UART)},
-  plural={UARTs},
-  firstplural={Universal Asynchronous Receiver Transmitters (UARTs)},
-}
-\newglossaryentry{nist}{
-  name={NIST},
-  description={National Institute of Standards and Technology (NIST)},
-  text={NIST},
-  first={National Institute of Standards and Technology (NIST)},
-  plural={UARTs},
-  firstplural={National Institute of Standards and Technology (NISTs)},
-}
 %
 \newglossaryentry{vhdl}{
   name={VHDL},
-  description={Very-high-speed integrated circuits hardware description
-		language},
+  description={\bold{V}ery-high-speed integrated circuits \bold{h}ardware \bold{d}escription
+		\bold{l}anguage. See also \gls{hdl}},
   text={VHDL},
   first={very-high-speed integrated circuits hardware description
 		language (VHDL)},
 }
 %
-\newglossaryentry{mac}{
-  name={MAC},
-  description={Message authentication code},
-  text={MAC},
-  first={message authentication code (MAC)},
-  plural={MACs},
-  firstplural={message authentication codes (MACs)},
-}
-%
 \newglossaryentry{rtl}{
   name={RTL},
-  description={Register-transfer level},
+  description={Register-transfer level; An abstraction layer of digital hardware designs, where the function is described with logical gates, like an AND-Gate},
   text={RTL},
   first={register-transfer level (RTL)},
 }
+
+\newglossaryentry{scraper}{
+ name={Scraper},
+ description={ A piece of software, that transforms information optimised for human readability into machine oriented data sets. },
+ text={Scraper},
+ first={Scraper},
+ plural={Scrapers},
+ firstplural={Scraper},
+}
+
+\newglossaryentry{IP}{
+ name={IP},
+ description={Intellectual Property; Non-Physical products, which may be protected by a copyright. In the context of this document, IP refers to a Hardware Design.},
+ text={IP},
+ first={Intellectual Property (IP)},
+ plural={IPs},
+ firstplural={Intellectual Properties (IPs)},
+}
+
+\newglossaryentry{scrapy}{
+ name={Scrapy},
+ description={A Web Scraper based on Python. See also \gls{scraper}},
+ text={Scrapy}
+}
+
 %
 %\newglossaryentry{}{
 %  name={},
@@ -523,6 +500,7 @@ The entire license text is available at:
 
 \include{sections/abstract}
 \tableofcontents
+\printglossaries
 \include{sections/introduction}
 \include{sections/sota}
 \include{sections/metholodgy}

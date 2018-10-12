@@ -22,22 +22,29 @@ Therefore, the task is to identify clusters in this vector space, and name them.
 To do this, we determine the match vectors of well known designs. Since
 the categorization of those designs is already available, the vectors that originate from designs with identical categorizations, can be grouped together to clusters. 
 
-It is expected, that the validity of such clusters increases with the number of analyzed designs. Therefore an automatic process has to be established, to enable the analysis of a great amount of designs. To achieve this, we use Scrapy, a Python web scraping tool, to automatically obtain design files and corresponding meta-information. \gls{oc} serves as source for those design files, and provides (among others) following information: 
+It is expected, that the validity of such clusters increases with the number of analyzed designs. Therefore an automatic process has to be established, to enable the analysis of a great amount of designs. To achieve this, Scrapy, a Python web scraping tool, is used to automatically obtain design files and corresponding meta-information. \gls{oc} serves as source for those design files. Among the set of information that is specifically provided for each design by \gls{oc}, we fetch and process following information.  
 
 \begin{enumerate}
 
 	\item{\gls{url} to the design archive}
+        So the Cluster Identification can be validated at a later point in time (asuming the files still exist under the same link).
 
 	\item{The name of the design project}
+        Used to address single designs. 
 
 	\item{The \gls{hdl} in which the design is specified and implemented}
+        Necesarry for the synthesis process, later in the cluster identification process
 
 	\item{The category in which a design is listed}
-	
+        Mandatory for the Cluster identification process. 
+        
 	\item{The \gls{hdl} files of the design}
-	
+        Trivially necesarry.
+        
 \end{enumerate}
-The following chapters explain in detail, how those informations are gathered, and processed into a match vector. 
+
+Scrapy is able to process data with a pipeline structure, which, in our case, enables us to push user defined data sets trough those stages, an perform specific actions on them. The advantage herein lies in the parallelity that can be achieved by using this strucutre, since multiple pipelines can be active at a given time. \cref{fig:scrapyPipeline} shows the pipeline stages of the scrapy implementation in this context.
+The following chapters explain in detail, how those Pipeline stages manipulate the data stated in the enumeration above.
 
 \begin{figure}
     \centering
@@ -48,17 +55,18 @@ The following chapters explain in detail, how those informations are gathered, a
         \node(Decompress) at (0,-2) {Decompress};
         \node(Synthesize) at (0,-3) {Synthesize};
         \node(Find pass) at (0,-4) {Find Pass};
-        \draw [->] (Fetch) -- (Download);
-        \draw [->] (Download) -- (Decompress);      
-        \draw [->] (Decompress) -- (Synthesize);
-        \draw [->] (Synthesize) -- (Find pass);
+        \draw [->] (Fetch) -- (Download);
+        \draw [->] (Download) -- (Decompress);
+        \draw [->] (Decompress) -- (Synthesize);
+        \draw [->] (Synthesize) -- (Find pass);
+
     \end{tikzpicture}
-            
-    \caption{ Stages of the Scrapy process }
+    \label{fig:scrapyPipeline}   
+    \caption{ Pipeline stages of the \gls{scrapy} implementaion. As seen in the figure, Pipelines can be executed parallelily. Although the final Stage "Clustering" waits on all pipelines to finish. }
 \end{figure}
 
-\subsubsection{Scraping OpenCores project web sites} 
-\gls{oc} does not offer an interface to automatically download all available design files. Therefore it has to be resorted to the web page, which is optimized for human interaction, but not for machine readability. Tools, which are spezialized in translating human readable content into structured, machine oriented data sets, are called Scrapers. Scrapy is one of them, and provides multiple python classes which enable extensible web scraping. 
+\subsubsection{Fetch} 
+\gls{oc} does not offer an interface to automatically download all available design files. Therefore it has to be resorted to the web page, which is optimized for human interaction, but not for machine readability. Tools, which are spezialized in translating human readable content into structured, machine oriented data sets, are called \glspl{scraper}. \gls{scrapy} is one of them, and provides multiple python classes which enable extensible web scraping.
 
 Scrapy's input is the HTML representation of the web page, which it is able to retrieve by itself, by providing a URL link to the web page. The HTML code is scanned for its elements.  Those are then parsed into python classes, and exposed to the user. The content of the parsed classes can be reorganized into user defined python classes, and passed to other user defined functions, which, among others, can store those informations persistently on a filesystem. Another option is to use HTML objects like Hyperlinks to further fork into the web page.
 
