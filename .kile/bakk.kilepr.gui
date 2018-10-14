@@ -100,35 +100,35 @@ order=-1
 
 [item:bib/bakk.bib]
 open=true
-order=2
+order=7
 
 [item:main.tex]
 open=true
-order=1
+order=0
 
 [item:sections/abstract.tex]
 open=true
-order=0
+order=3
 
 [item:sections/conclusion.tex]
 open=true
-order=6
+order=1
 
 [item:sections/discussion.tex]
 open=true
-order=7
+order=5
 
 [item:sections/introduction.tex]
 open=true
-order=3
+order=2
 
 [item:sections/metholodgy.tex]
 open=true
-order=5
+order=4
 
 [item:sections/sota.tex]
 open=true
-order=4
+order=6
 
 [item:sections/state_of_the_art.tex]
 open=true
@@ -146,8 +146,8 @@ TextFolding=[]
 ViMarks=
 
 [view-settings,view=0,item:main.tex]
-CursorColumn=23
-CursorLine=78
+CursorColumn=20
+CursorLine=389
 JumpList=
 TextFolding=[]
 ViMarks=.,84,13,[,84,13,],84,13
@@ -181,11 +181,11 @@ TextFolding=[]
 ViMarks=.,25,73,[,25,73,],25,73
 
 [view-settings,view=0,item:sections/metholodgy.tex]
-CursorColumn=0
-CursorLine=24
+CursorColumn=197
+CursorLine=95
 JumpList=
-TextFolding=[]
-ViMarks=.,43,33,[,43,23,],43,33
+TextFolding=[{"endColumn":20,"endLine":93,"flags":2,"startColumn":10,"startLine":50}]
+ViMarks=.,95,123,[,95,114,],95,123
 
 [view-settings,view=0,item:sections/sota.tex]
 CursorColumn=17

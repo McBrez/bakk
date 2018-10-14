@@ -48,21 +48,52 @@ The following chapters explain in detail, how those Pipeline stages manipulate t
 
 \begin{figure}
     \centering
-    \begin{tikzpicture}[scale = 2]
-        \tikzstyle{every node} = [scale = 2, rectangle, fill=gray!30, minimum width = 6em, minimum height = 1em)]
-        \node(Fetch) at (0,0) {Fetch};
-        \node(Download) at (0,-1) {Download};
-        \node(Decompress) at (0,-2) {Decompress};
-        \node(Synthesize) at (0,-3) {Synthesize};
-        \node(Find pass) at (0,-4) {Find Pass};
-        \draw [->] (Fetch) -- (Download);
-        \draw [->] (Download) -- (Decompress);
-        \draw [->] (Decompress) -- (Synthesize);
-        \draw [->] (Synthesize) -- (Find pass);
+    \begin{tikzpicture}[scale = 1]
+        \tikzstyle{every node} = [scale = 1, rectangle, fill=gray!30, minimum width = 6em, minimum height = 1em)]
+        \node(Pipeline 1)[fill = white] at (0, 0) {Pipeline 1};
+        \node(Fetch1) at (0, -1){Fetch};
+        \node(Download1) at (0, -2) {Download};
+        \node(Decompress1) at (0, -3) {Decompress};
+        \node(Synthesize1) at (0, -4) {Synthesize};
+        \node(Find pass1) at (0, -5) {Find Pass};
+        \draw [->] (Fetch1) -- (Download1);
+        \draw [->] (Download1) -- (Decompress1);
+        \draw [->] (Decompress1) -- (Synthesize1);
+        \draw [->] (Synthesize1) -- (Find pass1);
+        
+        \node(Pipeline 2)[fill = white] at (3, 0) {Pipeline 2};
+        \node(Fetch2) at (3, -1){Fetch};
+        \node(Download2) at (3, -2) {Download};
+        \node(Decompress2) at (3, -3) {Decompress};
+        \node(Synthesize2) at (3, -4) {Synthesize};
+        \node(Find pass2) at (3, -5) {Find Pass};
+        \draw [->] (Fetch2) -- (Download2);
+        \draw [->] (Download2) -- (Decompress2);
+        \draw [->] (Decompress2) -- (Synthesize2);
+        \draw [->] (Synthesize2) -- (Find pass2);
+        
+        \node(ellipsis)[fill = none, scale = 2] at (5,-3) {...};
+        
+        \node(Pipeline n)[fill = white] at (7, 0) {Pipeline n};
+        \node(Fetchn) at (7, -1){Fetch};
+        \node(Downloadn) at (7, -2) {Download};
+        \node(Decompressn) at (7, -3) {Decompress};
+        \node(Synthesizen) at (7, -4) {Synthesize};
+        \node(Find passn) at (7, -5) {Find Pass};
+        \draw [->] (Fetchn) -- (Downloadn);
+        \draw [->] (Downloadn) -- (Decompressn);
+        \draw [->] (Decompressn) -- (Synthesizen);
+        \draw [->] (Synthesizen) -- (Find passn);
+        
+        \node(Clustering) at (3, -6) {Clustering};
+        \draw [->] (Find pass1) -- (Clustering);
+        \draw [->] (Find pass2) -- (Clustering);
+        \draw [->] (Find passn) -- (Clustering);
+        
 
     \end{tikzpicture}
     \label{fig:scrapyPipeline}   
-    \caption{ Pipeline stages of the \gls{scrapy} implementaion. As seen in the figure, Pipelines can be executed parallelily. Although the final Stage "Clustering" waits on all pipelines to finish. }
+    \caption{ Pipeline stages of the \gls{scrapy} implementaion. As seen in the figure, Pipelines can be executed parallelly. Although the final Stage "Clustering" waits on all pipelines to finish. }
 \end{figure}
 
 \subsubsection{Fetch} 
