@@ -9,7 +9,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Metholodgy}
+\section{Methodology}
 
 To achieve our goal of the categorization of hardware designs trough a structural analysis of the corresponding HDL Design, we firstly propose a non-standardized match vector, which contains the count of the Design's Two-to-One and One-to-One Gate Level Connections (see \label{logicGates} referencce) as each of its entries, and secondly a standardized match vector, which reduces the information hold by the non-standardized match vector down to a two dimensional vector. This standardized match vector shall then act as categorization criteria, to sort the design into predefined design categories. Those categories are clusters in the vector space the standardized match vector is part of. If the match vector points into such a cluster, the design is identified with the corresponding category.
 This section elaborates on the details of finding a match vector of a design, and
@@ -22,7 +22,9 @@ Therefore, the task is to identify clusters in this vector space, and name them.
 To do this, we determine the match vectors of well known designs. Since
 the categorization of those designs is already available, the vectors that originate from designs with identical categorizations, can be grouped together to clusters. 
 
-It is expected, that the validity of such clusters increases with the number of analyzed designs. Therefore an automatic process has to be established, to enable the analysis of a great amount of designs. To achieve this, Scrapy, a Python web scraping tool, is used to automatically obtain design files and corresponding meta-information. \gls{oc} serves as source for those design files. Among the set of information that is specifically provided for each design by \gls{oc}, we fetch and process following information.  
+It is expected, that the validity of such clusters increases with the number of analyzed designs. Therefore an automatic process has to be established, to enable the analysis of a great amount of designs. Conveniently, the website \gls{oc} offers a great collection of Hardware Designs that already have been categorised manually. \gls{oc} though does not offer an interface to automatically download all available design files. Therefore it has to be resorted to the web page, which is optimized for human interaction, but not for machine readability. Luckily there are Tools, which are spezialized in translating human readable content into structured, machine oriented data sets. These are called \glspl{scraper}. \gls{scrapy} is a python framework that exposes the functionallities of such a \gls{scraper}, and provides multiple python classes which enable extensible web scraping. Because of its ease of use and extensibility, \gls{scrapy} has been chosen, to solve the majority of problems that come with the challenge of retrieving a great amount of Hardware Designs.
+
+Among the set of information that is specifically provided for each design by \gls{oc}, we fetch and process following information.  
 
 \begin{enumerate}
 
@@ -39,11 +41,11 @@ It is expected, that the validity of such clusters increases with the number of 
         Mandatory for the Cluster identification process. 
         
 	\item{The \gls{hdl} files of the design}
-        Trivially necesarry.
+        Trivially necesarry to analyse the hardware design.
         
 \end{enumerate}
 
-Scrapy is able to process data with a pipeline structure, which, in our case, enables us to push user defined data sets trough those stages, an perform specific actions on them. The advantage herein lies in the parallelity that can be achieved by using this strucutre, since multiple pipelines can be active at a given time. \cref{fig:scrapyPipeline} shows the pipeline stages of the scrapy implementation in this context.
+Scrapy is able to process data within a pipeline structure, which, in our case, enables us to push user defined data sets trough those stages, an perform specific actions on them. The advantage herein lies in the parallelity, and therefore speed increase, that can be achieved by using this strucutre, since multiple pipelines can be active at a given time. \cref{fig:scrapyPipeline} shows the pipeline stages of the scrapy implementation that has been developed during the run of this thesis.
 The following chapters explain in detail, how those Pipeline stages manipulate the data stated in the enumeration above.
 
 \begin{figure}
@@ -93,15 +95,24 @@ The following chapters explain in detail, how those Pipeline stages manipulate t
 
     \end{tikzpicture}
     \label{fig:scrapyPipeline}   
-    \caption{ Pipeline stages of the \gls{scrapy} implementaion. As seen in the figure, Pipelines can be executed parallelly. Although the final Stage "Clustering" waits on all pipelines to finish. }
+    \caption{ Pipeline stages of the \gls{scrapy} implementaion. As seen in the figure, Pipelines can be executed parallelly. The final stage "Clustering" is not implemented as pipeline stage, but rather waits on the completion of all pipelines to process all the gathered data. }
 \end{figure}
 
 \subsubsection{Fetch} 
-\gls{oc} does not offer an interface to automatically download all available design files. Therefore it has to be resorted to the web page, which is optimized for human interaction, but not for machine readability. Tools, which are spezialized in translating human readable content into structured, machine oriented data sets, are called \glspl{scraper}. \gls{scrapy} is one of them, and provides multiple python classes which enable extensible web scraping.
+In this stage, the \gls{oc} site is called to find the \glspl{url} where the hardware designs and corresponding meta informaiton resides. As \gls{oc}'s web page is built, like most web pages, in a tree like structure (see \cref{fig:opencoresStructure} for reference), \gls{scrapy} has been configured to start from the root page www.opencores.org, where the links to all projects reside (corresponds to the function call in \cref{lst:scrapyMainClass} line >>XXXX<<). "Start" in this context means, that the \gls{html} representation of the site is retrieved by \gls{scrapy} and exposed via a \gls{python} class to the User. \gls{scrapy} then offers functions to extract informations from the \gls{html} code, like filtering for all <h> elements (which represent \glspl{hyperlink} that fork deeper into the website.).
 
-Scrapy's input is the HTML representation of the web page, which it is able to retrieve by itself, by providing a URL link to the web page. The HTML code is scanned for its elements.  Those are then parsed into python classes, and exposed to the user. The content of the parsed classes can be reorganized into user defined python classes, and passed to other user defined functions, which, among others, can store those informations persistently on a filesystem. Another option is to use HTML objects like Hyperlinks to further fork into the web page.
+\begin{figure}
+ \caption{The structure of the \gls{oc} website}
+ \label{fig:opencoresStructure}
+\end{figure}
 
-\begin{lstlisting}[style = python, caption = {Scrapy Main Class}]
+
+As seen in \cref{lst:scrapyMainClass} line >>XXXXX<< for each >>element<<< that has been found, a new function >>>function<<< is invoked, which further calls the webpage the >>elements<< points to. 
+
+
+%Scrapy's input is the \gls{html} representation of the web page, which it is able to retrieve by itself, by providing a URL link to the web page. The HTML code is scanned for its HTML tags. Those are then parsed into python classes, and exposed to the user. The content of the parsed classes can be reorganized into user defined python classes, and passed to other user defined functions, which, among others, can store those informations persistently on a filesystem. Another option is to use HTML objects like Hyperlinks to further fork into the web page.
+
+\begin{lstlisting}[style = python, caption = {Scrapy Main Class}, label = {lst:scrapyMainClass}]
  class IPspider_oc(scrapy.Spider):
     """The class, which is called by the scrapy framework. """
     name = 'ipspider_oc'   # the name of the spider
@@ -166,13 +177,6 @@ Scrapy's input is the HTML representation of the web page, which it is able to r
 \paragraph*{Authentication \\}
 
 For our application, the first challenge is, to authenticate via the \gls{oc} user system, since designs are only downloadable while logged in with a cost free \gls{oc} account. Login information is often communicated via HTML POST Messages, which encode the message content into the message header. In the login case, the login information is encoded into the header. The web page returns an authentication token, which is stored as cookie and enables access to the web page. Scrapy is natively able to generate send such POST messages and exposes the answer to such a POST messages in Python classes, for further actions. 
-
-
-
-
-\paragraph*{Traversing of the Web Page \\}
-
-As \gls{oc}'s web page is built, like most web pages, in a tree like structure (see <<LABEL>> for reference), scrapy has been configured to start from the root page <<URL>>, where the links to all projects reside. It then calls each project page, by filtering for the <h> elements of the 
 
 Like most web pages, \gls{oc} is built in a tree-like structure.  
 The scraped data is temporarily stored into Python class objects. The information 
