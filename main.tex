@@ -77,10 +77,11 @@
 % Use glossaries
 %
 \usepackage{glossaries}
-\makeglossaries
 %
 % Glossary entries
 %
+\makenoidxglossaries
+
 \newglossaryentry{oc}{
 	name = {OpenCores},
 	description = { A wegpage (opencores.org), which provides open source Hardware Design Language Intellectual Properties },
@@ -117,8 +118,7 @@
 %
 \newglossaryentry{vhdl}{
   name={VHDL},
-  description={\bold{V}ery-high-speed integrated circuits \bold{h}ardware \bold{d}escription
-		\bold{l}anguage. See also \gls{hdl}},
+  description={Very-high-speed integrated circuits hardware description language. See also \gls{hdl}},
   text={VHDL},
   first={very-high-speed integrated circuits hardware description
 		language (VHDL)},
@@ -157,7 +157,7 @@
 
 \newglossaryentry{html}{
   name={HTML},
-  description={\bold{H}yper \bold{T}ext \bold{M}arkup \bold{L}anguage; A language to describe the layout of text and media.},
+  description={Hyper Text Markup Language; A language to describe the layout of text and media.},
   text={HTML},
   first={Hyper Text Markup Language (HTML)},
 }
@@ -178,7 +178,6 @@
 %  plural={},
 %  firstplural={},
 %}
-%
 %----------------------------------------------------------------------------
 %
 % Settings for citations and the bibliography
@@ -514,7 +513,8 @@ The entire license text is available at:
 
 \include{sections/abstract}
 \tableofcontents
-\printglossaries
+\clearpage
+\printnoidxglossaries
 \include{sections/introduction}
 \include{sections/sota}
 \include{sections/metholodgy}

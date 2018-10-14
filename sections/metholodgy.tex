@@ -22,26 +22,31 @@ Therefore, the task is to identify clusters in this vector space, and name them.
 To do this, we determine the match vectors of well known designs. Since
 the categorization of those designs is already available, the vectors that originate from designs with identical categorizations, can be grouped together to clusters. 
 
-It is expected, that the validity of such clusters increases with the number of analyzed designs. Therefore an automatic process has to be established, to enable the analysis of a great amount of designs. Conveniently, the website \gls{oc} offers a great collection of Hardware Designs that already have been categorised manually. \gls{oc} though does not offer an interface to automatically download all available design files. Therefore it has to be resorted to the web page, which is optimized for human interaction, but not for machine readability. Luckily there are Tools, which are spezialized in translating human readable content into structured, machine oriented data sets. These are called \glspl{scraper}. \gls{scrapy} is a python framework that exposes the functionallities of such a \gls{scraper}, and provides multiple python classes which enable extensible web scraping. Because of its ease of use and extensibility, \gls{scrapy} has been chosen, to solve the majority of problems that come with the challenge of retrieving a great amount of Hardware Designs.
+It is expected, that the validity of such clusters increases with the number of analyzed designs. Therefore an automatic process has to be established, to enable the analysis of a great amount of designs. Conveniently, the website \gls{oc} offers a great collection of Hardware Designs that already have been categorised manually. \gls{oc} though does not offer an interface to automatically download all available design files. Therefore it has to be resorted to the web page, which is optimized for human interaction, but not for machine readability. Luckily there are Tools, which are spezialized in translating human readable content into structured, machine oriented data sets. These are called \glspl{scraper}. \gls{scrapy} \autocite{scrapy} is a python framework that exposes the functionallities of such a \gls{scraper}, and provides multiple python classes which enable extensible web scraping. Because of its ease of use and extensibility, \gls{scrapy} has been chosen, to solve the majority of problems that come with the challenge of retrieving a great amount of Hardware Designs.
 
 Among the set of information that is specifically provided for each design by \gls{oc}, we fetch and process following information.  
 
 \begin{enumerate}
 
 	\item{\gls{url} to the design archive}
-        So the Cluster Identification can be validated at a later point in time (asuming the files still exist under the same link).
+       
+       So the Cluster Identification can be validated at a later point in time (asuming the files still exist under the same link).
 
 	\item{The name of the design project}
-        Used to address single designs. 
+       
+       Used to address single designs. 
 
 	\item{The \gls{hdl} in which the design is specified and implemented}
-        Necesarry for the synthesis process, later in the cluster identification process
+       
+       Necesarry for the synthesis process, later in the cluster identification process
 
 	\item{The category in which a design is listed}
-        Mandatory for the Cluster identification process. 
+       
+       Mandatory for the Cluster identification process. 
         
 	\item{The \gls{hdl} files of the design}
-        Trivially necesarry to analyse the hardware design.
+       
+       Trivially necesarry to analyse the hardware design.
         
 \end{enumerate}
 

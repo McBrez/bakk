@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.10.14)  14 OCT 2018 14:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.23)  14 OCT 2018 21:41
 entering extended mode
 **./main.tex
 (main.tex
@@ -238,7 +238,7 @@ Package: inputenc 2018/04/06 v1.3b Input encoding file
 Package: geometry 2018/04/16 v5.8 Page Geometry
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
@@ -556,17 +556,11 @@ Package: supertabular 2004/02/20 v4.1e the supertabular environment
 Package: glossary-tree 2018/07/23 v4.41 (NLCT)
 \glstreeindent=\skip75
 ))
-\glswrite=\write3
-\glo@main@file=\write4
-\openout4 = `main.glo'.
-
-Package glossaries Info: Writing glossary file main.glo on input line 80.
-
 ("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty"
 Package: biblatex 2018/03/04 v3.11 programmable bibliographies (PK/MW)
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -586,7 +580,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\xstring\xstring.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\xstring\xstring.tex"
-\@xs@message=\write5
+\@xs@message=\write3
 \integerpart=\count132
 \decimalpart=\count133
 )
@@ -639,7 +633,7 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 \bibparsep=\skip82
 \bibhang=\skip83
 \blx@bcfin=\read1
-\blx@bcfout=\write6
+\blx@bcfout=\write4
 \c@mincomprange=\count172
 \c@maxcomprange=\count173
 \c@mincompwidth=\count174
@@ -898,7 +892,7 @@ x"
 \pgf@yb=\dimen149
 \pgf@xc=\dimen150
 \pgf@yc=\dimen151
-\w@pgf@writea=\write7
+\w@pgf@writea=\write5
 \r@pgf@reada=\read2
 \c@pgf@counta=\count323
 \c@pgf@countb=\count324
@@ -1579,10 +1573,10 @@ Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
-Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+Package: caption 2018/05/01 v3.3-147 Customizing captions (AR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
-Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package: caption3 2018/05/27 v1.8a caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
 \captionmargin=\dimen302
 \captionmargin@=\dimen303
@@ -1592,21 +1586,20 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \caption@parindent=\dimen307
 \caption@hangindent=\dimen308
 )
-\c@caption@flags=\count457
-\c@ContinuedFloat=\count458
+\c@ContinuedFloat=\count457
 Package caption Info: longtable package is loaded.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\ltcaption.sty"
-Package: ltcaption 2018/08/26 v1.4-95 longtable captions (AR)
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
 )
-\c@subfigure=\count459
-\c@subtable=\count460
+\c@subfigure=\count458
+\c@subtable=\count459
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count461
+\c@lips@count=\count460
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\paralist\paralist.sty"
 Package: paralist 2017/01/22 v2.7 Extended list environments
@@ -1617,29 +1610,29 @@ Package: paralist 2017/01/22 v2.7 Extended list environments
 \pl@lab=\toks51
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
-\lst@mode=\count462
+\lst@mode=\count461
 \lst@gtempboxa=\box77
 \lst@token=\toks52
-\lst@length=\count463
+\lst@length=\count462
 \lst@currlwidth=\dimen309
-\lst@column=\count464
-\lst@pos=\count465
+\lst@column=\count463
+\lst@pos=\count464
 \lst@lostspace=\dimen310
 \lst@width=\dimen311
-\lst@newlines=\count466
-\lst@lineno=\count467
+\lst@newlines=\count465
+\lst@lineno=\count466
 \lst@maxwidth=\dimen312
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
-File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
-\c@lstnumber=\count468
-\lst@skipnumbers=\count469
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count467
+\lst@skipnumbers=\count468
 \lst@framebox=\box78
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
-File: listings.cfg 2018/09/02 1.7 listings configuration
+File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
-Package: listings 2018/09/02 1.7 (Carsten Heinz)
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\mdwtools\syntax.sty"
 Package: syntax 1996/05/17 1.07 Syntax typesetting (MDW)
@@ -1672,7 +1665,7 @@ Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
 ("C:\Program Files\MiKTeX 2.9\tex\latex\makecell\makecell.sty"
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \rotheadsize=\dimen317
-\c@nlinenum=\count470
+\c@nlinenum=\count469
 \TeXr@lab=\toks53
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\dtk\dtk-logos.sty"
@@ -1710,15 +1703,15 @@ Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count471
-\calc@Bcount=\count472
+\calc@Acount=\count470
+\calc@Bcount=\count471
 \calc@Adimen=\dimen318
 \calc@Bdimen=\dimen319
 \calc@Askip=\skip137
 \calc@Bskip=\skip138
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count473
+\calc@Ccount=\count472
 \calc@Cskip=\skip139
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ifmtarg\ifmtarg.sty"
@@ -1730,12 +1723,12 @@ Package: threeparttable 2003/06/13  v 3.0
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\appendix\appendix.sty"
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
-\c@@pps=\count474
-\c@@ppsavesec=\count475
-\c@@ppsaveapp=\count476
+\c@@pps=\count473
+\c@@ppsavesec=\count474
+\c@@ppsaveapp=\count475
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
-Package: hyperref 2018/09/30 v6.88a Hypertext links for LaTeX
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
@@ -1773,51 +1766,51 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen320
-\Hy@linkcounter=\count477
-\Hy@pagecounter=\count478
+\Hy@linkcounter=\count476
+\Hy@pagecounter=\count477
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
-File: pd1enc.def 2018/09/30 v6.88a Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count479
+\Hy@SavedSpaceFactor=\count478
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4535.
-Package hyperref Info: Link nesting OFF on input line 4540.
-Package hyperref Info: Hyper index ON on input line 4543.
-Package hyperref Info: Plain pages OFF on input line 4550.
-Package hyperref Info: Backreferencing OFF on input line 4555.
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4788.
-\c@Hy@tempcnt=\count480
-LaTeX Info: Redefining \url on input line 5141.
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count479
+LaTeX Info: Redefining \url on input line 5115.
 \XeTeXLinkMargin=\dimen321
-\Fld@menulength=\count481
+\Fld@menulength=\count480
 \Field@Width=\dimen322
 \Fld@charsize=\dimen323
-Package hyperref Info: Hyper figures OFF on input line 6396.
-Package hyperref Info: Link nesting OFF on input line 6401.
-Package hyperref Info: Hyper index ON on input line 6404.
-Package hyperref Info: backreferencing OFF on input line 6411.
-Package hyperref Info: Link coloring OFF on input line 6416.
-Package hyperref Info: Link coloring with OCG OFF on input line 6421.
-Package hyperref Info: PDF/A mode OFF on input line 6426.
-LaTeX Info: Redefining \ref on input line 6466.
-LaTeX Info: Redefining \pageref on input line 6470.
-\Hy@abspage=\count482
-\c@Item=\count483
-\c@Hfootnote=\count484
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count481
+\c@Item=\count482
+\c@Hfootnote=\count483
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
-File: hpdftex.def 2018/09/30 v6.88a Hyperref driver for pdfTeX
-\Fld@listcount=\count485
-\c@bookmark@seq@number=\count486
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count484
+\c@bookmark@seq@number=\count485
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
@@ -1826,7 +1819,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip140
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 396.
+Package hyperref Info: Option `colorlinks' set `true' on input line 410.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\cleveref\cleveref.sty"
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
@@ -1850,44 +1843,46 @@ Package biblatex Info: ... file 'english.lbx' found.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx"
 File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 )
-\@quotelevel=\count487
-\@quotereset=\count488
- (main.aux)
+\@quotelevel=\count486
+\@quotereset=\count487
+ (main.aux
+(sections/abstract.aux) (sections/introduction.aux) (sections/sota.aux)
+(sections/metholodgy.aux) (sections/conclusion.aux) (sections/discussion.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 410.
-LaTeX Font Info:    ... okay on input line 410.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 410.
-LaTeX Font Info:    ... okay on input line 410.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 410.
-LaTeX Font Info:    ... okay on input line 410.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 410.
-LaTeX Font Info:    ... okay on input line 410.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 410.
-LaTeX Font Info:    ... okay on input line 410.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 410.
-LaTeX Font Info:    ... okay on input line 410.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 410.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 410.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 424.
+LaTeX Font Info:    ... okay on input line 424.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 424.
+LaTeX Font Info:    ... okay on input line 424.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 424.
+LaTeX Font Info:    ... okay on input line 424.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 424.
+LaTeX Font Info:    ... okay on input line 424.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 424.
+LaTeX Font Info:    ... okay on input line 424.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 424.
+LaTeX Font Info:    ... okay on input line 424.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 424.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 424.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 410.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 410.
-LaTeX Font Info:    ... okay on input line 410.
+LaTeX Font Info:    ... okay on input line 424.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 424.
+LaTeX Font Info:    ... okay on input line 424.
 LaTeX Font Info:    Try loading font information for T1+LinuxLibertineT-TLF on 
-input line 410.
+input line 424.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\libertine\t1linuxlibertinet-tlf.fd"
 File: T1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/Li
 nuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 410.
-\c@mv@tabular=\count489
-\c@mv@boldtabular=\count490
+(Font)              scaled to size 10.0pt on input line 424.
+\c@mv@tabular=\count488
+\c@mv@boldtabular=\count489
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1924,20 +1919,20 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 410.
+LaTeX Info: Redefining \selectfont on input line 424.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count491
+\scratchcounter=\count490
 \scratchdimen=\dimen324
 \scratchbox=\box81
-\nofMPsegments=\count492
-\nofMParguments=\count493
+\nofMPsegments=\count491
+\nofMParguments=\count492
 \everyMPshowfont=\toks54
-\MPscratchCnt=\count494
+\MPscratchCnt=\count493
 \MPscratchDim=\dimen325
-\MPnumerator=\count495
-\makeMPintoPDFobject=\count496
+\MPnumerator=\count494
+\makeMPintoPDFobject=\count495
 \everyMPtoPDFconversion=\toks55
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1955,15 +1950,22 @@ G,.JBIG2,.JB2,.eps]
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout6 = `main.bcf'.
+\openout4 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (main.bbl)
-Package biblatex Info: Reference section=0 on input line 410.
-Package biblatex Info: Reference segment=0 on input line 410.
+ (main.bbl
 
-ABD: EveryShipout initializing macros
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                scrapy
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
+Package biblatex Info: Reference section=0 on input line 424.
+Package biblatex Info: Reference segment=0 on input line 424.
+ ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.16}).
 
@@ -1980,9 +1982,9 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count497
+\c@lstlisting=\count496
 \AtBeginShipoutBox=\box82
-Package hyperref Info: Link coloring ON on input line 410.
+Package hyperref Info: Link coloring ON on input line 424.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1990,65 +1992,63 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count498
+\c@section@level=\count497
 )
-LaTeX Info: Redefining \ref on input line 410.
-LaTeX Info: Redefining \pageref on input line 410.
-LaTeX Info: Redefining \nameref on input line 410.
+LaTeX Info: Redefining \ref on input line 424.
+LaTeX Info: Redefining \pageref on input line 424.
+LaTeX Info: Redefining \nameref on input line 424.
 
 (main.out) (main.out)
-\@outlinefile=\write8
-\openout8 = `main.out'.
+\@outlinefile=\write6
+\openout6 = `main.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 410.
+LaTeX Font Info:    Try loading font information for U+msa on input line 424.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 410.
+LaTeX Font Info:    Try loading font information for U+msb on input line 424.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<fig/logo-tu-bw.png, id=6, 2503.3525pt x 948.54375pt>
+<fig/logo-tu-bw.png, id=70, 2503.3525pt x 948.54375pt>
 File: fig/logo-tu-bw.png Graphic file (type png)
 <use fig/logo-tu-bw.png>
-Package pdftex.def Info: fig/logo-tu-bw.png  used on input line 417.
+Package pdftex.def Info: fig/logo-tu-bw.png  used on input line 431.
 (pdftex.def)             Requested size: 150.15646pt x 56.9055pt.
-<fig/logo-ict.png, id=8, 255.2445pt x 83.439pt>
+<fig/logo-ict.png, id=72, 255.2445pt x 83.439pt>
 File: fig/logo-ict.png Graphic file (type png)
 <use fig/logo-ict.png>
-Package pdftex.def Info: fig/logo-ict.png  used on input line 419.
+Package pdftex.def Info: fig/logo-ict.png  used on input line 433.
 (pdftex.def)             Requested size: 174.07806pt x 56.9055pt.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 425.
+(Font)              scaled to size 12.0pt on input line 439.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 20.74pt on input line 431.
+(Font)              scaled to size 20.74pt on input line 445.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 432.
+(Font)              scaled to size 14.4pt on input line 446.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 24.88pt on input line 439.
+(Font)              scaled to size 24.88pt on input line 453.
  [1
 
-\openout3 = `main.ist'.
-
-{C:/Users/davfr/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./fig/logo-
+{C:/Users/David/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./fig/logo-
 tu-bw.png> <./fig/logo-ict.png>]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 452.
-<fig/cc-large.png, id=21, 385.44pt x 385.44pt>
+(Font)              scaled to size 7.0pt on input line 466.
+<fig/cc-large.png, id=82, 385.44pt x 385.44pt>
 File: fig/cc-large.png Graphic file (type png)
 <use fig/cc-large.png>
-Package pdftex.def Info: fig/cc-large.png  used on input line 464.
+Package pdftex.def Info: fig/cc-large.png  used on input line 478.
 (pdftex.def)             Requested size: 42.67494pt x 42.67912pt.
-<fig/by-large.png, id=22, 385.44pt x 385.44pt>
+<fig/by-large.png, id=83, 385.44pt x 385.44pt>
 File: fig/by-large.png Graphic file (type png)
 <use fig/by-large.png>
-Package pdftex.def Info: fig/by-large.png  used on input line 465.
+Package pdftex.def Info: fig/by-large.png  used on input line 479.
 (pdftex.def)             Requested size: 42.67494pt x 42.67912pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.494 \newgeometry
+l.508 \newgeometry
                   {% [1 <./fig/cc-large.png> <./fig/by-large.png>]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
@@ -2093,22 +2093,120 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 
 ]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 502.
+(Font)              scaled to size 14.4pt on input line 516.
+ (main.toc)
+\tf@toc=\write7
+\openout7 = `main.toc'.
 
 
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+Using TeX to sort glossary entries---this may take a while
 
-\tf@toc=\write9
-\openout9 = `main.toc'.
+Package amsfonts Warning: Obsolete command \bold; \mathbf should be used instea
+d on input line 517.
 
-No file main.gls.
+
+! LaTeX Error: \mathbf allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.517 \printnoidxglossaries
+                           
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \mathbf allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.517 \printnoidxglossaries
+                           
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \mathbf allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.517 \printnoidxglossaries
+                           
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \mathbf allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.517 \printnoidxglossaries
+                           
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \mathbf allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.517 \printnoidxglossaries
+                           
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \mathbf allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.517 \printnoidxglossaries
+                           
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \mathbf allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.517 \printnoidxglossaries
+                           
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \mathbf allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.517 \printnoidxglossaries
+                           
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 [3
 
 ]
 \openout2 = `sections/introduction.aux'.
 
  (sections/introduction.tex
-<fig/logicGates.png, id=46, 448.67625pt x 207.02344pt>
+<fig/logicGates.png, id=122, 448.67625pt x 207.02344pt>
 File: fig/logicGates.png Graphic file (type png)
 <use fig/logicGates.png>
 Package pdftex.def Info: fig/logicGates.png  used on input line 25.
@@ -2121,7 +2219,7 @@ Package pdftex.def Info: fig/logicGates.png  used on input line 25.
  (sections/sota.tex
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 25.
-<fig/hwTrojanNets.jpg, id=54, 624.83438pt x 264.99pt>
+<fig/hwTrojanNets.jpg, id=129, 624.83438pt x 264.99pt>
 File: fig/hwTrojanNets.jpg Graphic file (type jpg)
 <use fig/hwTrojanNets.jpg>
 Package pdftex.def Info: fig/hwTrojanNets.jpg  used on input line 31.
@@ -2133,37 +2231,26 @@ Package pdftex.def Info: fig/hwTrojanNets.jpg  used on input line 31.
  <./fig/hwTrojanNets.jpg>]
 \openout2 = `sections/metholodgy.aux'.
 
- (sections/metholodgy.tex
-
-LaTeX Warning: Reference `fig:scrapyPipeline' on page 1 undefined on input line
- 46.
-
-[6
+ (sections/metholodgy.tex [6
 
 
-] ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
-File: lstlang1.sty 2018/09/02 1.7 listings language file
+]
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 104.
+(Font)              scaled to size 8.0pt on input line 120.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 105.
- [7]
-<fig/jsonFileFormatDescription.JPG, id=117, 1057.70157pt x 463.7325pt>
+(Font)              scaled to size 5.0pt on input line 121.
+ [7] [8]
+<fig/jsonFileFormatDescription.JPG, id=223, 1057.70157pt x 463.7325pt>
 File: fig/jsonFileFormatDescription.JPG Graphic file (type jpg)
 <use fig/jsonFileFormatDescription.JPG>
 Package pdftex.def Info: fig/jsonFileFormatDescription.JPG  used on input line 
-186.
+195.
 (pdftex.def)             Requested size: 398.3386pt x 174.64223pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Reference `fig:jsonFormat' on page 1 undefined on input line 191
-.
-
-[8] [9 <./fig/jsonFileFormatDescription.JPG>]) [10]
+[9 <./fig/jsonFileFormatDescription.JPG>]) [10]
 \openout2 = `sections/conclusion.aux'.
 
  (sections/conclusion.tex)
@@ -2178,66 +2265,65 @@ LaTeX Warning: Reference `fig:jsonFormat' on page 1 undefined on input line 191
 
 ]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 510.
+(Font)              scaled to size 10.0pt on input line 524.
 LaTeX Font Info:    Try loading font information for T1+LinuxLibertineMonoT-TLF
- on input line 510.
+ on input line 524.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\libertine\t1linuxlibertinemonot-tlf.fd"
 File: T1LinuxLibertineMonoT-TLF.fd 2017/03/20 (autoinst) Font definitions for T
 1/LinuxLibertineMonoT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 510.
+(Font)              scaled to size 10.0pt on input line 524.
+ (main.lof)
+\tf@lof=\write8
+\openout8 = `main.lof'.
 
-
-Package hyperref Warning: old lof file detected, not used; run LaTeX again.
-
-\tf@lof=\write10
-\openout10 = `main.lof'.
-
-[13
+ [13
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 513.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 513.
- (main.aux (sections/abstract.aux) (sections/introduction.aux)
-(sections/sota.aux) (sections/metholodgy.aux) (sections/conclusion.aux)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 527.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 527.
+ (main.aux (sections/abstract.aux) (sections/introduction.aux) (sections/sota.a
+ux) (sections/metholodgy.aux) (sections/conclusion.aux)
 (sections/discussion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 513.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 513.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  538AA830B8623698324FE2C4CF9E2C75;1151.
-
-LaTeX Warning: There were undefined references.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 527.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 527.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: DD82A9F94405948AE360440FEEA38B7A;1152.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 56929 strings out of 492970
- 1220226 string characters out of 3135854
- 2092846 words of memory out of 3000000
- 59825 multiletter control sequences out of 15000+200000
+ 57018 strings out of 492973
+ 1222005 string characters out of 3135932
+ 2213994 words of memory out of 3000000
+ 59895 multiletter control sequences out of 15000+200000
  602962 words of font info for 81 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,8n,127p,1987b,2613s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 73i,8n,127p,1992b,2585s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{figure.caption.5} has been referenced but does no
+t exist, replaced by a fixed one
 
-!pdfTeX error: pdflatex (file LinLibertineMT-tlf-t1--base): Font LinLibertineMT
--tlf-t1--base at 600 not found
- ==> Fatal error occurred, no output PDF file produced!
+pdfTeX warning (dest): name{figure.caption.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_d6jdyt.enc}{C:/Prog
+ram Files/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_ncsllp.enc}{C:/Program File
+s/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{C:/Program Files/MiKTeX
+ 2.9/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}<C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/libertine/LinLibertineMT.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/libertine/LinLibertineT.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/libertine/LinLibertineTB.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb>
+Output written on main.pdf (14 pages, 737245 bytes).
+PDF statistics:
+ 308 PDF objects out of 1000 (max. 8388607)
+ 112 named destinations out of 1000 (max. 500000)
+ 176 words of extra memory for PDF output out of 10000 (max. 10000000)
+

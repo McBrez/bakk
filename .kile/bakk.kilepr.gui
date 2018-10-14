@@ -2,7 +2,7 @@
 kile_livePreviewEnabled=true
 kile_livePreviewStatusUserSpecified=false
 kile_livePreviewTool=LivePreview-PDFLaTeX
-lastDocument=sections/metholodgy.tex
+lastDocument=main.tex
 
 [document-settings,item:bib/bakk.bib]
 Bookmarks=
@@ -99,36 +99,36 @@ open=false
 order=-1
 
 [item:bib/bakk.bib]
-open=true
+open=false
 order=2
 
 [item:main.tex]
 open=true
-order=1
+order=0
 
 [item:sections/abstract.tex]
 open=true
-order=0
+order=3
 
 [item:sections/conclusion.tex]
 open=true
-order=6
+order=1
 
 [item:sections/discussion.tex]
 open=true
-order=7
+order=5
 
 [item:sections/introduction.tex]
 open=true
-order=3
+order=2
 
 [item:sections/metholodgy.tex]
 open=true
-order=5
+order=4
 
 [item:sections/sota.tex]
 open=true
-order=4
+order=6
 
 [item:sections/state_of_the_art.tex]
 open=true
@@ -146,11 +146,11 @@ TextFolding=[]
 ViMarks=
 
 [view-settings,view=0,item:main.tex]
-CursorColumn=20
-CursorLine=389
+CursorColumn=10
+CursorLine=515
 JumpList=
 TextFolding=[]
-ViMarks=.,84,13,[,84,13,],84,13
+ViMarks=.,515,9,[,515,1,],515,9
 
 [view-settings,view=0,item:sections/abstract.tex]
 CursorColumn=0
@@ -181,15 +181,15 @@ TextFolding=[]
 ViMarks=.,25,73,[,25,73,],25,73
 
 [view-settings,view=0,item:sections/metholodgy.tex]
-CursorColumn=197
-CursorLine=95
+CursorColumn=746
+CursorLine=24
 JumpList=
-TextFolding=[{"endColumn":20,"endLine":93,"flags":2,"startColumn":10,"startLine":50}]
-ViMarks=.,95,123,[,95,114,],95,123
+TextFolding=[{"endColumn":20,"endLine":100,"flags":2,"startColumn":10,"startLine":57}]
+ViMarks=.,24,745,[,24,740,],24,745
 
 [view-settings,view=0,item:sections/sota.tex]
-CursorColumn=17
-CursorLine=29
+CursorColumn=48
+CursorLine=19
 JumpList=
 TextFolding=[]
 ViMarks=.,29,16,[,29,14,],29,16
