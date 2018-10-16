@@ -104,7 +104,7 @@ The following chapters explain in detail, how those Pipeline stages manipulate t
 \end{figure}
 
 \subsubsection{Fetch} 
-In this stage, the \gls{oc} site is called to find the \glspl{url} where the hardware designs and corresponding meta informaiton resides. As \gls{oc}'s web page is built, like most web pages, in a tree like structure (see \cref{fig:opencoresStructure} for reference), \gls{scrapy} has been configured to start from the root page www.opencores.org, where the links to all projects reside (corresponds to the function call in \cref{lst:scrapyMainClass} line >>XXXX<<). "Start" in this context means, that the \gls{html} representation of the site is retrieved by \gls{scrapy} and exposed via a \gls{python} class to the User. \gls{scrapy} then offers functions to extract informations from the \gls{html} code, like filtering for all <h> elements (which represent \glspl{hyperlink} that fork deeper into the website.).
+In this stage, the \gls{oc} site is called to find the \glspl{url} where the hardware designs and corresponding meta informaiton resides. As \gls{oc}'s web page is built, like most web pages, in a tree like structure (see \cref{fig:opencoresStructure} for reference), \gls{scrapy} has been configured to start from the root page www.opencores.org, where the links to all projects reside (corresponds to the function call in \cref{lst:scrapyMainClass} line >>XXXX<<). "Start" in this context means, that the \Gls{html} representation of the site is retrieved by \gls{scrapy} and exposed via a \Gls{python} class to the User. \Gls{scrapy} then offers functions to extract informations from the \gls{html} code, like filtering for all <h> elements (which represent \glspl{hyperlink} that fork deeper into the website.).
 
 \begin{figure}
  \caption{The structure of the \gls{oc} website}
@@ -113,9 +113,6 @@ In this stage, the \gls{oc} site is called to find the \glspl{url} where the har
 
 
 As seen in \cref{lst:scrapyMainClass} line >>XXXXX<< for each >>element<<< that has been found, a new function >>>function<<< is invoked, which further calls the webpage the >>elements<< points to. 
-
-
-%Scrapy's input is the \gls{html} representation of the web page, which it is able to retrieve by itself, by providing a URL link to the web page. The HTML code is scanned for its HTML tags. Those are then parsed into python classes, and exposed to the user. The content of the parsed classes can be reorganized into user defined python classes, and passed to other user defined functions, which, among others, can store those informations persistently on a filesystem. Another option is to use HTML objects like Hyperlinks to further fork into the web page.
 
 \begin{lstlisting}[style = python, caption = {Scrapy Main Class}, label = {lst:scrapyMainClass}]
  class IPspider_oc(scrapy.Spider):
@@ -178,12 +175,15 @@ As seen in \cref{lst:scrapyMainClass} line >>XXXXX<< for each >>element<<< that 
         yield hdl_IP
 \end{lstlisting}
 
-
 \paragraph*{Authentication \\}
 
-For our application, the first challenge is, to authenticate via the \gls{oc} user system, since designs are only downloadable while logged in with a cost free \gls{oc} account. Login information is often communicated via HTML POST Messages, which encode the message content into the message header. In the login case, the login information is encoded into the header. The web page returns an authentication token, which is stored as cookie and enables access to the web page. Scrapy is natively able to generate send such POST messages and exposes the answer to such a POST messages in Python classes, for further actions. 
+Besides navigating to and trough the webpage, another task for the Fetch stage is the authentication with the \Gls{oc} user system, since designs are only downloadable, while logged in with a cost free \Gls{oc} account.
 
-Like most web pages, \gls{oc} is built in a tree-like structure.  
+Login information is often communicated via \Gls{HTML} \Gls{post} Messages, which encode the message content into the message header. In the login case, the login information is encoded into the message header. After the login information has been accepted by the web page, it returns an authentication token, which is stored as \Gls{Cookie} and enables access to the web page. Scrapy is natively able to generate and send such \Gls{post} messages and exposes the answer to such \Gls{post} messages in Python classes, for further actions. The function which sends the \Gls{POST} message can be seen in \cref{lst:scrapyMainClass} line >>XXXXX<<.
+
+\paragraph*{Extraction \\}
+
+
 The scraped data is temporarily stored into Python class objects. The information 
 in these objects are written to a .JSON file, in order to make them persistent (such
 that we do not have to scrape the entire \gls{oc} web site every time we use our 
@@ -199,17 +199,12 @@ so information can be imported from other sources then scrapy aswell.
 
 Figure \Cref{fig:jsonFormat} shows an example of the content of the .JSON file. 
 
-\subsubsection{Downloading OpenCores projects}
-The Scrapy python module provides the functionallity to automatically download and
+\subsubsection{Download}
+The \Gls{scrapy} \Gls{python} module provides the functionallity to automatically download and
 store files that are associated with a Hardware design project, to a predefined
-folder. Since \gls{oc} requires an account to be able to download hardware designs, 
-we use a scrapy internal function to send a POST request to the \gls{oc} webpage,
-in order to authorize ourselfs. 
+folder.  
 
-Because all project files from the \gls{oc} database are provided as tar.gz archives,
-we introduced an additional decompression step.  
-
-\subsubsection{Decompressing design files} 
+\subsubsection{Decompress} 
 Projects from \gls{oc} are solely provided as *.tar.gz compressed archive. The \gls{python}
 module tarfile enables the extraction of those archives. Additionally 
 to the decompression, we sort the project files into folders corresponding to 
@@ -218,7 +213,7 @@ endings of the files are analysed. If those endings indicate a \gls{hdl} file, t
 to this file is added to the aforementioned .JSON file, in order to be able to
 address the design files of a project in later steps.
 
-\subsubsection{Reading designs into synthesis tool} 
+\subsubsection{Synthesis} 
 After the design has been decompressed, it is time to let the synthesis tool 
 yosys read the design files and synthesise them into a text file format. In 
 order to do this, yosys expects a yosys script file, which holds all yosys commands 
@@ -239,14 +234,14 @@ that yosys scripts should be generated automatically). To accomplish this, we sl
 the Vunit python project, which offers a function to return the \gls{vhdl} 
 files in an ordered list. The vhdl files can then be loaded in the order dictated by this list.  
 
-\subsubsection{Naming designs} 
+\subsubsection{Find Pass} 
 Each design that is read by the synthesis tool is named after the project from
 which the design files are downloaded. From then, the design name is the main
 reference for each design and serves as identification feature in all
 subsequent steps.
 
-\subsubsection{Matching designs against standard pattern vector}
-\subsubsection{Calculating clusters of design match vectors}
+\subsubsection{Clustering}
+blabla
 
 \subsection{Design Identification}
 blabla
