@@ -179,16 +179,10 @@ As seen in \cref{lst:scrapyMainClass} line >>XXXXX<< for each >>element<<< that 
 
 Besides navigating to and trough the webpage, another task for the Fetch stage is the authentication with the \Gls{oc} user system, since designs are only downloadable, while logged in with a cost free \Gls{oc} account.
 
-Login information is often communicated via \Gls{HTML} \Gls{post} Messages, which encode the message content into the message header. In the login case, the login information is encoded into the message header. After the login information has been accepted by the web page, it returns an authentication token, which is stored as \Gls{Cookie} and enables access to the web page. Scrapy is natively able to generate and send such \Gls{post} messages and exposes the answer to such \Gls{post} messages in Python classes, for further actions. The function which sends the \Gls{POST} message can be seen in \cref{lst:scrapyMainClass} line >>XXXXX<<.
+Login information is often communicated via \Gls{html} \Gls{post} Messages, which encode the message content into the message header. In the login case, the login information is encoded into the message header. After the login information has been accepted by the web page, it returns an authentication token, which is stored as \Gls{cookie} and enables access to the web page. Scrapy is natively able to generate and send such \Gls{post} messages and exposes the answer to such \Gls{post} messages in Python classes, for further actions. The function which sends the \Gls{post} message can be seen in \cref{lst:scrapyMainClass} line >>XXXXX<<.
 
 \paragraph*{Extraction \\}
-
-
-The scraped data is temporarily stored into Python class objects. The information 
-in these objects are written to a .JSON file, in order to make them persistent (such
-that we do not have to scrape the entire \gls{oc} web site every time we use our 
-classification framework). For this .JSON file, a specific format has been defined, 
-so information can be imported from other sources then scrapy aswell. 
+Once \Gls{scrapy} navigated to the project page, the above mentionend information is extracted by using \Gls{css} selectors, as seen in \cref{lst:scrapyMainClass} line >XXXXXX< to >>YYYYYYYY<<. The so gathered data sets are stored in the user defined \Gls{python} \lstinline{HDL_IP} object (derived from the \Gls{scrapy} class \lstinline{item}), which serves as container that gets pushed trough the Pipeline stages. The Fetch stage ends with returning the \lstinline{HDL_IP} object to the \Gls{scrapy} framework, where it gets handed over to the next Pipeline stage.  
 
 \begin{figure}[h]
 	\centering
@@ -202,16 +196,15 @@ Figure \Cref{fig:jsonFormat} shows an example of the content of the .JSON file.
 \subsubsection{Download}
 The \Gls{scrapy} \Gls{python} module provides the functionallity to automatically download and
 store files that are associated with a Hardware design project, to a predefined
-folder.  
+folder. The download is started by pushing an \lstinline{item} object with an \lstinline{URL} atrribute into a pipeline stage declared as a donwload stage. The \Gls{scrapy} framework then begins the download of the file specified in the \lstinline{URL} atrribute to the path defined in the atrribute \lstinline{spider.settings['FILE_STORE']}. If the file has been downloaded successfully, its name gets added to the \lstinline{HDL_IP} object under the attribute \lstinline{item.file}.  
 
 \subsubsection{Decompress} 
-Projects from \gls{oc} are solely provided as *.tar.gz compressed archive. The \gls{python}
-module tarfile enables the extraction of those archives. Additionally 
-to the decompression, we sort the project files into folders corresponding to 
+Projects from \gls{oc} are solely provided eiter as *.tar.gz or *.zip compressed archive. The stage 'Decompress' is therefore dedicated to decompress the previously downloaded archive and to order the contained files into an predefined structure. The \Gls{python} modules \lstinline{tarfile} and \lstinline{zipfile} enable the extraction of such archives.
+After the decompression, the project files are sorted into folders corresponding to 
 their associated hardware category (as stated by \gls{oc}). After that, the file 
 endings of the files are analysed. If those endings indicate a \gls{hdl} file, the path 
-to this file is added to the aforementioned .JSON file, in order to be able to
-address the design files of a project in later steps.
+to this file is added to the aforementioned \lstlisting{HDL_IP} object, in order to be able to
+address the design files of a project in later stages.
 
 \subsubsection{Synthesis} 
 After the design has been decompressed, it is time to let the synthesis tool 

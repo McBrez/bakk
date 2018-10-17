@@ -99,36 +99,36 @@ open=false
 order=-1
 
 [item:bib/bakk.bib]
-open=true
+open=false
 order=2
 
 [item:main.tex]
 open=true
-order=1
+order=0
 
 [item:sections/abstract.tex]
 open=true
-order=0
+order=3
 
 [item:sections/conclusion.tex]
 open=true
-order=6
+order=1
 
 [item:sections/discussion.tex]
 open=true
-order=7
+order=4
 
 [item:sections/introduction.tex]
 open=true
-order=3
+order=2
 
 [item:sections/metholodgy.tex]
 open=true
-order=5
+order=6
 
 [item:sections/sota.tex]
 open=true
-order=4
+order=5
 
 [item:sections/state_of_the_art.tex]
 open=true
@@ -146,11 +146,11 @@ TextFolding=[]
 ViMarks=
 
 [view-settings,view=0,item:main.tex]
-CursorColumn=13
-CursorLine=175
+CursorColumn=16
+CursorLine=18
 JumpList=
 TextFolding=[]
-ViMarks=.,175,12,[,175,9,],175,12
+ViMarks=.,191,41,[,191,38,],191,41
 
 [view-settings,view=0,item:sections/abstract.tex]
 CursorColumn=0
@@ -181,11 +181,11 @@ TextFolding=[]
 ViMarks=.,25,73,[,25,73,],25,73
 
 [view-settings,view=0,item:sections/metholodgy.tex]
-CursorColumn=6
-CursorLine=243
+CursorColumn=15
+CursorLine=233
 JumpList=
-TextFolding=[{"endColumn":20,"endLine":100,"flags":2,"startColumn":10,"startLine":57},{"endColumn":15,"endLine":175,"flags":2,"startColumn":6,"startLine":116}]
-ViMarks=.,243,5,[,243,3,],243,5
+TextFolding=[{"endColumn":20,"endLine":100,"flags":2,"startColumn":10,"startLine":57}]
+ViMarks=.,206,52,[,206,51,],206,52
 
 [view-settings,view=0,item:sections/sota.tex]
 CursorColumn=48
