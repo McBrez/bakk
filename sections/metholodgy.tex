@@ -107,7 +107,26 @@ The following chapters explain in detail, how those Pipeline stages manipulate t
 In this stage, the \gls{oc} site is called to find the \glspl{url} where the hardware designs and corresponding meta informaiton resides. As \gls{oc}'s web page is built, like most web pages, in a tree like structure (see \cref{fig:opencoresStructure} for reference), \gls{scrapy} has been configured to start from the root page www.opencores.org, where the links to all projects reside (corresponds to the function call in \cref{lst:scrapyMainClass} line >>XXXX<<). "Start" in this context means, that the \Gls{html} representation of the site is retrieved by \gls{scrapy} and exposed via a \Gls{python} class to the User. \Gls{scrapy} then offers functions to extract informations from the \gls{html} code, like filtering for all <h> elements (which represent \glspl{hyperlink} that fork deeper into the website.).
 
 \begin{figure}
- \caption{The structure of the \gls{oc} website}
+ \centering
+ \begin{tikzpicture}[grow via three points={one child at (0.5,-0.7) and two children at (0.5,-0.7) and (0.5,-1.4)},
+  edge from parent path={(\tikzparentnode.south) |- (\tikzchildnode.west)}]
+  \tikzstyle{every node}=[draw=black,thick,anchor=west]
+  \tikzstyle{selected}=[draw=red,fill=red!30]
+  \tikzstyle{optional}=[dashed,fill=gray!50]
+  \node {opencores.org}
+    child { node {opencores.org/projects}
+        child{ node [selected] {opencores.org/project/audio}}
+        child{ node [selected] {opencores.org/project/adder_subtractor}}
+        child{ node [selected] {opencores.org/project/...}}
+    }
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child { node {opencores.org/forum}}
+    child { node {opencores.org/licensing}}
+    child { node {opencores.org/...}};
+ \end{tikzpicture}
+ \caption{The structure of the \gls{oc} website. The \Glspl{url} where the projects are located, are marked red.}
  \label{fig:opencoresStructure}
 \end{figure}
 
@@ -204,16 +223,18 @@ After the decompression, the project files are sorted into folders corresponding
 their associated hardware category (as stated by \gls{oc}). After that, the file 
 endings of the files are analysed. If those endings indicate a \gls{hdl} file, the path 
 to this file is added to the aforementioned \lstinline{HDL_IP} object, in order to be able to
-address the design files of a project in later stages.
+address the design files of a project in later stages. If no such files could be found, the \lstinline{HDL_IP} object is discarded, and will not be further processed. 
 
 \subsubsection{Synthesis} 
-After the design has been decompressed, it is time to let the synthesis tool 
-yosys read the design files and synthesise them into a text file format. In 
-order to do this, yosys expects a yosys script file, which holds all yosys commands 
-that should be executed on a set of files. This script file can either be provided
-by the user before a programm run, or a generic one can be generated automatically 
-during a programm run, according to the files that have been provided with the 
-.JSON file. 
+After the design has been decompressed, it is time to let the synthesis tool \Gls{yosys} read the design files and synthesise them into a text file format. In order to do this in an automated manner, for each discovered design, a yosys script file is generated on the basis of the information, that has been gathered in previous steps. This Script instructs \Gls{yosys} about the path to the discovered files and with which frontend to load them. A sample script file can be seen in \cref{lst:yosysScriptFile}.
+An alternative for this automatic script generation is to supply a custom made script, which will then be loaded instead of the generic one. Bigger design may need to be synthesised with such a custom script, since the dependecies may be much to complex, to be computed automatically. 
+
+ \begin{lstlisting}[style = python, caption = {An example Yosys Script file.}, label = {lst:yosysScriptFile}]
+  asdfsdafasdfasdfasdfsdaf
+ \end{listing}
+ \caption{An example Yosys Script file.}
+ \label{lst:yosysScriptFile}
+ \end{lstlisting}
 
 The synthesis tool's frontend is chosen based on the language of each design file.
 For \gls{vhdl} and SystemVerilog, the \lstinline{verific} frontend is used. For Verilog,

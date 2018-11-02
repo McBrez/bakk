@@ -146,11 +146,11 @@ TextFolding=[]
 ViMarks=
 
 [view-settings,view=0,item:main.tex]
-CursorColumn=16
-CursorLine=18
+CursorColumn=0
+CursorLine=0
 JumpList=
 TextFolding=[]
-ViMarks=.,191,41,[,191,38,],191,41
+ViMarks=.,197,16,[,197,16,],197,16
 
 [view-settings,view=0,item:sections/abstract.tex]
 CursorColumn=0
@@ -181,11 +181,11 @@ TextFolding=[]
 ViMarks=.,25,73,[,25,73,],25,73
 
 [view-settings,view=0,item:sections/metholodgy.tex]
-CursorColumn=54
-CursorLine=205
+CursorColumn=97
+CursorLine=248
 JumpList=
-TextFolding=[{"endColumn":20,"endLine":100,"flags":2,"startColumn":10,"startLine":57}]
-ViMarks=.,205,53,[,205,48,],205,53
+TextFolding=[{"endColumn":20,"endLine":100,"flags":2,"startColumn":10,"startLine":57},{"endColumn":15,"endLine":194,"flags":2,"startColumn":6,"startLine":135}]
+ViMarks=.,228,493,[,228,493,],228,507
 
 [view-settings,view=0,item:sections/sota.tex]
 CursorColumn=48
